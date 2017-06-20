@@ -141,7 +141,7 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
         geoView(mapView, didLongPressAtScreenPoint: sp, mapPoint: mapView.screen(toLocation:sp))
         
         if #available(iOS 10.0, *) {
-            timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true){ timer in
+            timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true){ timer in
                 
                 sp = self.randomScreenPoint()
                 self.geoView(self.mapView, didMoveLongPressToScreenPoint: sp, mapPoint: self.mapView.screen(toLocation:sp))
