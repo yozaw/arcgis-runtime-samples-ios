@@ -15,7 +15,7 @@
 //
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 class SearchForWebmapByKeywordViewController: UIViewController, WebMapsCollectionViewControllerDelegate, UISearchBarDelegate {
 

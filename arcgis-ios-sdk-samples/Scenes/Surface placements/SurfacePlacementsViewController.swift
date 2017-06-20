@@ -15,7 +15,7 @@
 //
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 class SurfacePlacementsViewController: UIViewController {
 

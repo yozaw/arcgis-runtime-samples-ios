@@ -14,7 +14,7 @@
 // limitations under the License.
 
 import Foundation
-import ArcGIS
+//import ArcGIS
 
 extension AGSJobStatus {
     func statusString() -> String {

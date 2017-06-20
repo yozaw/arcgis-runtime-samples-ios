@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 protocol CreateOptionsVCDelegate:class {
     func createOptionsViewController(_ createOptionsViewController:CreateOptionsViewController, didSelectBasemap basemap:AGSBasemap, layers:[AGSLayer]?)

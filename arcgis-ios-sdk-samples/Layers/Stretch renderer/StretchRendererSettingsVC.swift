@@ -14,7 +14,7 @@
 // limitations under the License.
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 enum StretchType: String {
     case MinMax = "MinMax"

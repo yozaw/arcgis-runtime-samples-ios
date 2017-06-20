@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
     
@@ -119,7 +119,46 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
     
     //MARK: - AGSGeoViewTouchDelegate
     
+    func randomBetweenNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat{
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
+    
+    func randomScreenPoint() -> CGPoint{
+        return CGPoint(x: randomBetweenNumbers(firstNum: 0, secondNum: mapView.bounds.width),
+                       y: randomBetweenNumbers(firstNum: 0, secondNum: mapView.bounds.height))
+    }
+    
+    var timer : Timer?
+    
+    @IBAction func startAction(){
+        
+        timer?.invalidate()
+        
+        var sp = randomScreenPoint()
+        geoView(mapView, didTapAtScreenPoint: sp, mapPoint: mapView.screen(toLocation:sp))
+        
+        sp = randomScreenPoint()
+        geoView(mapView, didLongPressAtScreenPoint: sp, mapPoint: mapView.screen(toLocation:sp))
+        
+        if #available(iOS 10.0, *) {
+            timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true){ timer in
+                
+                sp = self.randomScreenPoint()
+                self.geoView(self.mapView, didMoveLongPressToScreenPoint: sp, mapPoint: self.mapView.screen(toLocation:sp))
+            }
+        } else {
+            // Fallback on earlier versions
+        }
+        
+    }
+    
+    @IBAction func stopAction(){
+        timer?.invalidate()
+    }
+    
     func geoView(_ geoView: AGSGeoView, didTapAtScreenPoint screenPoint: CGPoint, mapPoint: AGSPoint) {
+        
+        
         //on single tap, add stop graphic at the tapped location
         //and route
         let graphic = self.graphicForLocation(mapPoint)

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 class DisplayLocationViewController: UIViewController, CustomContextSheetDelegate {
     

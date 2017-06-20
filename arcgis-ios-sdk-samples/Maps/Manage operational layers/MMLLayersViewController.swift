@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 protocol MMLLayersViewControllerDelegate:class {
     func layersViewControllerWantsToClose(_ layersViewController:MMLLayersViewController, withDeletedLayers layers:[AGSLayer])

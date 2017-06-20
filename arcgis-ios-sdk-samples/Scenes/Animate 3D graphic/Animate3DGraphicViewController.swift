@@ -14,7 +14,7 @@
 // limitations under the License.
 
 import UIKit
-import ArcGIS
+//import ArcGIS
 
 class Animate3DGraphicViewController: UIViewController, MissionSettingsVCDelegate, UIAdaptivePresentationControllerDelegate {
 
