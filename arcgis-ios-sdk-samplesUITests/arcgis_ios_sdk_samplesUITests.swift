@@ -53,6 +53,8 @@ class arcgis_ios_sdk_samplesUITests: XCTestCase {
     
     func testExample() {
         
+        self.continueAfterFailure = false
+        
         let app = XCUIApplication()
         app.collectionViews.images["Route & Directions_icon"].tap()
         app.tables.staticTexts["Offline routing"].tap()
@@ -69,8 +71,6 @@ class arcgis_ios_sdk_samplesUITests: XCTestCase {
                 let fromCoordinate = randomCoord(mapviewElement)
                 let toCoordinate = randomCoord(mapviewElement)
                 fromCoordinate.press(forDuration: 0.8, thenDragTo: toCoordinate)
-                //fromCoordinate.tap()
-                //toCoordinate.tap()
                 
                 if (i % trashIt) == (trashIt - 1){
                     let trash = app.buttons["trashBlue"]
@@ -78,6 +78,14 @@ class arcgis_ios_sdk_samplesUITests: XCTestCase {
                         trash.tap()
                     }
                 }
+                
+                print("***")
+                print("***")
+                print(" ")
+                print(" iterations: \(i)")
+                print(" ")
+                print("***")
+                print("***")
             }
         }
 
@@ -93,8 +101,8 @@ class arcgis_ios_sdk_samplesUITests: XCTestCase {
         let mapviewElement = app.otherElements["MapView"]
         mapviewElement.tap()
         mapviewElement.tap()
-        mapviewElement.tap()
         app.buttons["trashBlue"].tap()
+        
         
         
         

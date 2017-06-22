@@ -71,6 +71,8 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
         //will be using the touch gestures to add the stops
         self.mapView.touchDelegate = self
         
+        self.mapView.interactionOptions.allowMagnifierToPan = false
+        
         //add graphics overlay, one for the stop graphics
         //and other for the route graphics
         self.mapView.graphicsOverlays.addObjects(from: [self.routeGraphicsOverlay, self.stopGraphicsOverlay])
