@@ -23,6 +23,9 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l92-Q4-Uk4" customClass="AGSMapView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="MapView">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="msR-U7-cd1">
                                 <rect key="frame" x="0.0" y="556" width="600" height="36"/>

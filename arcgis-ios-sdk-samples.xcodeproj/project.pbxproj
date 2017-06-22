@@ -420,6 +420,7 @@
 		3EFDE0F81E36ABB700CBCD92 /* FeatureCollectionLayerQueryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFDE0F41E36ABB700CBCD92 /* FeatureCollectionLayerQueryVC.swift */; };
 		3EFDE0F91E36AE3100CBCD92 /* FeatureCollectionLayerVC.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EFDE0F11E36ABB700CBCD92 /* FeatureCollectionLayerVC.swift */; };
 		3EFDE0FA1E36AE3100CBCD92 /* FeatureCollectionLayerQueryVC.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3EFDE0F41E36ABB700CBCD92 /* FeatureCollectionLayerQueryVC.swift */; };
+		88AE76FB1EFB2FC700AFC80A /* arcgis_ios_sdk_samplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE76FA1EFB2FC700AFC80A /* arcgis_ios_sdk_samplesUITests.swift */; };
 		97DD84671B2B869300184B41 /* xcode.css in Resources */ = {isa = PBXBuildFile; fileRef = 97DD84661B2B869300184B41 /* xcode.css */; };
 		E45991A01EF3021D0089E9FD /* SearchForWebmapByKeyword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E459919B1EF3021D0089E9FD /* SearchForWebmapByKeyword.storyboard */; };
 		E45991A11EF3021D0089E9FD /* SearchForWebmapByKeywordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E459919C1EF3021D0089E9FD /* SearchForWebmapByKeywordViewController.swift */; };
@@ -498,6 +499,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4B95F76C18D4F7F1003343FC;
 			remoteInfo = ArcGISRT;
+		};
+		88AE76FD1EFB2FC700AFC80A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E23A9D81AFC28F6002E2214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E23A9DF1AFC28F6002E2214;
+			remoteInfo = "arcgis-ios-sdk-samples";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -943,6 +951,9 @@
 		3EFDE0F31E36ABB700CBCD92 /* FeatureCollectionLayerQuery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeatureCollectionLayerQuery.storyboard; sourceTree = "<group>"; };
 		3EFDE0F41E36ABB700CBCD92 /* FeatureCollectionLayerQueryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCollectionLayerQueryVC.swift; sourceTree = "<group>"; };
 		886788891EF9B48700D7E6CE /* ArcGISRT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ArcGISRT.xcodeproj; path = ../../API/Common/ArcGISRT.xcodeproj; sourceTree = "<group>"; };
+		88AE76F81EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "arcgis-ios-sdk-samplesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AE76FA1EFB2FC700AFC80A /* arcgis_ios_sdk_samplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arcgis_ios_sdk_samplesUITests.swift; sourceTree = "<group>"; };
+		88AE76FC1EFB2FC700AFC80A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DD84661B2B869300184B41 /* xcode.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = xcode.css; sourceTree = "<group>"; };
 		E459919B1EF3021D0089E9FD /* SearchForWebmapByKeyword.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchForWebmapByKeyword.storyboard; sourceTree = "<group>"; };
 		E459919C1EF3021D0089E9FD /* SearchForWebmapByKeywordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchForWebmapByKeywordViewController.swift; sourceTree = "<group>"; };
@@ -955,6 +966,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E23A9DD1AFC28F6002E2214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88AE76F51EFB2FC700AFC80A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1079,6 +1097,7 @@
 				3E23A9E21AFC28F6002E2214 /* arcgis-ios-sdk-samples */,
 				3E23A9EE1AFC28F6002E2214 /* Images.xcassets */,
 				3E23A9E51AFC28F6002E2214 /* AppDelegate.swift */,
+				88AE76F91EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests */,
 				3E23A9E11AFC28F6002E2214 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1087,6 +1106,7 @@
 			isa = PBXGroup;
 			children = (
 				3E23A9E01AFC28F6002E2214 /* arcgis-ios-sdk-samples.app */,
+				88AE76F81EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2392,6 +2412,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		88AE76F91EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88AE76FA1EFB2FC700AFC80A /* arcgis_ios_sdk_samplesUITests.swift */,
+				88AE76FC1EFB2FC700AFC80A /* Info.plist */,
+			);
+			path = "arcgis-ios-sdk-samplesUITests";
+			sourceTree = "<group>";
+		};
 		E459919A1EF3021D0089E9FD /* Search for webmap by keyword */ = {
 			isa = PBXGroup;
 			children = (
@@ -2437,6 +2466,24 @@
 			productReference = 3E23A9E01AFC28F6002E2214 /* arcgis-ios-sdk-samples.app */;
 			productType = "com.apple.product-type.application";
 		};
+		88AE76F71EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88AE770F1EFB2FC700AFC80A /* Build configuration list for PBXNativeTarget "arcgis-ios-sdk-samplesUITests" */;
+			buildPhases = (
+				88AE76F41EFB2FC700AFC80A /* Sources */,
+				88AE76F51EFB2FC700AFC80A /* Frameworks */,
+				88AE76F61EFB2FC700AFC80A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88AE76FE1EFB2FC700AFC80A /* PBXTargetDependency */,
+			);
+			name = "arcgis-ios-sdk-samplesUITests";
+			productName = "arcgis-ios-sdk-samplesUITests";
+			productReference = 88AE76F81EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2462,7 +2509,7 @@
 					YellowstoneMMPK,
 				);
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Esri;
 				TargetAttributes = {
@@ -2471,6 +2518,11 @@
 						DevelopmentTeam = P8HGHS7JQ8;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+					};
+					88AE76F71EFB2FC700AFC80A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3E23A9DF1AFC28F6002E2214;
 					};
 				};
 			};
@@ -2494,6 +2546,7 @@
 			projectRoot = "";
 			targets = (
 				3E23A9DF1AFC28F6002E2214 /* arcgis-ios-sdk-samples */,
+				88AE76F71EFB2FC700AFC80A /* arcgis-ios-sdk-samplesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2703,6 +2756,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88AE76F61EFB2FC700AFC80A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2885,6 +2945,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88AE76F41EFB2FC700AFC80A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88AE76FB1EFB2FC700AFC80A /* arcgis_ios_sdk_samplesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2892,6 +2960,11 @@
 			isa = PBXTargetDependency;
 			name = ArcGISRT;
 			targetProxy = 886788AB1EF9B4A000D7E6CE /* PBXContainerItemProxy */;
+		};
+		88AE76FE1EFB2FC700AFC80A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E23A9DF1AFC28F6002E2214 /* arcgis-ios-sdk-samples */;
+			targetProxy = 88AE76FD1EFB2FC700AFC80A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3059,6 +3132,39 @@
 			};
 			name = Release;
 		};
+		88AE76FF1EFB2FC700AFC80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "arcgis-ios-sdk-samplesUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.arcgis-ios-sdk-samplesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "arcgis-ios-sdk-samples";
+			};
+			name = Debug;
+		};
+		88AE77001EFB2FC700AFC80A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "arcgis-ios-sdk-samplesUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.arcgis-ios-sdk-samplesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "arcgis-ios-sdk-samples";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -3079,6 +3185,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		88AE770F1EFB2FC700AFC80A /* Build configuration list for PBXNativeTarget "arcgis-ios-sdk-samplesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88AE76FF1EFB2FC700AFC80A /* Debug */,
+				88AE77001EFB2FC700AFC80A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

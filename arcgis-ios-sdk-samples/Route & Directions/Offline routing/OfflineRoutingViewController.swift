@@ -29,9 +29,9 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
     
     private var stopGraphicsOverlay = AGSGraphicsOverlay()
     private var routeGraphicsOverlay = AGSGraphicsOverlay()
-    private var longPressedGraphic:AGSGraphic!
-    private var longPressedRouteGraphic:AGSGraphic!
-    private var routeTaskOperation:AGSCancelable!
+    private var longPressedGraphic:AGSGraphic?
+    private var longPressedRouteGraphic:AGSGraphic?
+    private var routeTaskOperation:AGSCancelable?
     
     private var totalDistance:Double = 0 {
         didSet {
@@ -173,8 +173,10 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
     func geoView(_ geoView: AGSGeoView, didLongPressAtScreenPoint screenPoint: CGPoint, mapPoint: AGSPoint) {
         //add the graphic at that point
         //keep a reference to that graphic to update the geometry if moved
-        self.longPressedGraphic = self.graphicForLocation(mapPoint)
-        self.stopGraphicsOverlay.graphics.add(self.longPressedGraphic)
+        let lpg = self.graphicForLocation(mapPoint)
+        self.longPressedGraphic = lpg
+        self.stopGraphicsOverlay.graphics.add(lpg)
+        
         //clear the route graphic
         self.longPressedRouteGraphic = nil
         //route
@@ -184,7 +186,7 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
     func geoView(_ geoView: AGSGeoView, didMoveLongPressToScreenPoint screenPoint: CGPoint, mapPoint: AGSPoint) {
         //update the graphic
         //route
-        self.longPressedGraphic.geometry = mapPoint
+        self.longPressedGraphic?.geometry = mapPoint
         self.route(isLongPressed: true)
     }
     
@@ -220,8 +222,16 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
         
         //create stops using the last two graphics in the overlay
         let count = self.stopGraphicsOverlay.graphics.count
-        let geometry1 = (self.stopGraphicsOverlay.graphics[count-2] as! AGSGraphic).geometry as! AGSPoint
-        let geometry2 = (self.stopGraphicsOverlay.graphics[count-1] as! AGSGraphic).geometry as! AGSPoint
+
+        guard let geometry1 = (self.stopGraphicsOverlay.graphics[count-2] as? AGSGraphic)?.geometry as? AGSPoint else{
+            return
+        }
+        guard let geometry2 = (self.stopGraphicsOverlay.graphics[count-1] as? AGSGraphic)?.geometry as? AGSPoint else{
+            return
+        }
+        
+        //let geometry1 = (self.stopGraphicsOverlay.graphics[count-2] as! AGSGraphic).geometry as! AGSPoint
+        //let geometry2 = (self.stopGraphicsOverlay.graphics[count-1] as! AGSGraphic).geometry as! AGSPoint
         let stop1 = AGSStop(point: (geometry1))
         let stop2 = AGSStop(point: (geometry2))
         let stops = [stop1, stop2]
@@ -255,12 +265,16 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
     func displayRoutesOnMap(_ routes:[AGSRoute]?, isLongPressedResult:Bool) {
         //if a route graphic for previous request (in case of long press)
         //exists then remove it
-        if self.longPressedRouteGraphic != nil {
+        if let lprg = self.longPressedRouteGraphic{
             //update distance and time
-            self.totalTime = self.totalTime - Double(self.longPressedGraphic.attributes["routeTime"] as! NSNumber)
-            self.totalDistance = self.totalDistance - Double(self.longPressedGraphic.attributes["routeLength"] as! NSNumber)
             
-            self.routeGraphicsOverlay.graphics.remove(self.longPressedRouteGraphic)
+            if let routeTime = self.longPressedGraphic?.attributes["routeTime"] as? NSNumber,
+               let routeDistance = self.longPressedGraphic?.attributes["routeLength"] as? NSNumber{
+                self.totalTime = self.totalTime - Double(routeTime)
+                self.totalDistance = self.totalDistance - Double(routeDistance)
+            }
+            
+            self.routeGraphicsOverlay.graphics.remove(lprg)
             self.longPressedRouteGraphic = nil
             
         }
@@ -275,8 +289,10 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
                 self.longPressedRouteGraphic = routeGraphic
                 
                 //set attributes (to subtract in case the route is not used)
-                self.longPressedGraphic.attributes["routeTime"] = route.totalTime
-                self.longPressedGraphic.attributes["routeLength"] = route.totalLength
+                if let lpg = self.longPressedGraphic{
+                    lpg.attributes["routeTime"] = route.totalTime
+                    lpg.attributes["routeLength"] = route.totalLength
+                }
             }
             self.routeGraphicsOverlay.graphics.add(routeGraphic)
             

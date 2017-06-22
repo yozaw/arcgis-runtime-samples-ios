@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "88AE76F71EFB2FC700AFC80A"
+               BuildableName = "arcgis-ios-sdk-samplesUITests.xctest"
+               BlueprintName = "arcgis-ios-sdk-samplesUITests"
+               ReferencedContainer = "container:arcgis-ios-sdk-samples.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
