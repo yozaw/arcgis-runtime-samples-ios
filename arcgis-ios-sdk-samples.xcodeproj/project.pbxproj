@@ -3193,6 +3193,7 @@
 				88AE77001EFB2FC700AFC80A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

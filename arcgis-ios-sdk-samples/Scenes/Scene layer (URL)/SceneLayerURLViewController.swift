@@ -21,12 +21,33 @@ class SceneLayerURLViewController: UIViewController {
 
     @IBOutlet var sceneView:AGSSceneView!
     
+    deinit {
+        print("deinit SceneLayerURLViewController")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //add the source code button item to the right of navigation bar
         (self.navigationItem.rightBarButtonItem as! SourceCodeBarButtonItem).filenames = ["SceneLayerURLViewController"]
         
+        //originalTest()
+        capi_8022_test()
+    }
+    
+    func capi_8022_test(){
+        //initialize scene with topographic basemap
+        let scene = AGSScene(basemap: AGSBasemap.topographic())
+        
+        let sceneLayer = AGSArcGISSceneLayer(url: URL(string: "http://ec2-184-169-128-202.us-west-1.compute.amazonaws.com/arcgis/rest/services/Hosted/SanFranciscoCBD1/SceneServer")!)
+        
+        self.sceneView.scene?.operationalLayers.add(sceneLayer)
+        
+        //assign scene to the scene view
+        self.sceneView.scene = scene
+    }
+    
+    func originalTest(){
         //initialize scene with topographic basemap
         let scene = AGSScene(basemap: AGSBasemap.imagery())
         
