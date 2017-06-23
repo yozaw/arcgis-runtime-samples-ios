@@ -93,18 +93,5 @@ class arcgis_ios_sdk_samplesUITests: XCTestCase {
     
     func test2(){
         
-        let app = XCUIApplication()
-        app.collectionViews.images["Route & Directions_icon"].tap()
-        app.tables.staticTexts["Offline routing"].tap()
-        app.navigationBars["Offline routing"].buttons["Switch to full screen mode"].tap()
-        
-        let mapviewElement = app.otherElements["MapView"]
-        mapviewElement.tap()
-        mapviewElement.tap()
-        app.buttons["trashBlue"].tap()
-        
-        
-        
-        
     }
 }
