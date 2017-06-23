@@ -73,7 +73,14 @@
 				<true/>
 				<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
 				<true/>
-			</dict>
+            </dict>
+            <key>amazonaws.com</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
 		</dict>
 	</dict>
 	<key>NSCameraUsageDescription</key>
