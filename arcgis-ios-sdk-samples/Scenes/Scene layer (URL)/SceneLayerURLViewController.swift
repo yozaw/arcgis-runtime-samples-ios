@@ -18,8 +18,12 @@ import UIKit
 import ArcGIS
 
 class SceneLayerURLViewController: UIViewController {
-
+    
     @IBOutlet var sceneView:AGSSceneView!
+    
+    deinit {
+        print("deinit SceneLayerURLViewController")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,29 @@ class SceneLayerURLViewController: UIViewController {
         //add the source code button item to the right of navigation bar
         (self.navigationItem.rightBarButtonItem as! SourceCodeBarButtonItem).filenames = ["SceneLayerURLViewController"]
         
+        //originalTest()
+        capi_8022_test()
+    }
+    
+    func capi_8022_test(){
+        //initialize scene with topographic basemap
+        let scene = AGSScene(basemap: AGSBasemap.topographic())
+        
+        let sceneLayer = AGSArcGISSceneLayer(url: URL(string: "http://ec2-184-169-128-202.us-west-1.compute.amazonaws.com/arcgis/rest/services/Hosted/SanFranciscoCBD1/SceneServer")!)
+        
+        sceneLayer.load{ error in
+            
+            print("scene load: \(error)")
+            
+        }
+        
+        scene.operationalLayers.add(sceneLayer)
+        
+        //assign scene to the scene view
+        self.sceneView.scene = scene
+    }
+    
+    func originalTest(){
         //initialize scene with topographic basemap
         let scene = AGSScene(basemap: AGSBasemap.imagery())
         
@@ -48,10 +75,11 @@ class SceneLayerURLViewController: UIViewController {
         let sceneLayer = AGSArcGISSceneLayer(url: URL(string: "http://tiles.arcgis.com/tiles/P3ePLMYs2RVChkJx/arcgis/rest/services/Buildings_Brest/SceneServer/layers/0")!)
         self.sceneView.scene?.operationalLayers.add(sceneLayer)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
+
