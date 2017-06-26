@@ -48,6 +48,7 @@ class GeocodeOfflineViewController: UIViewController, AGSGeoViewTouchDelegate, U
         //register self as the touch delgate for the map view
         //will need that to show callout
         self.mapView.touchDelegate = self
+        self.mapView.interactionOptions.allowMagnifierToPan = false
         
         //initialize the graphics overlay and add to the map view
         //will add the resulting graphics to this overlay

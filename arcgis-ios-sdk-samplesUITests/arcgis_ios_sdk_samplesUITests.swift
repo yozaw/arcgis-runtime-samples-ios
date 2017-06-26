@@ -121,6 +121,35 @@ class arcgis_ios_sdk_samplesUITests: XCTestCase {
         
     }
     
+    func testOfflineGeocode(){
+        
+        let app = XCUIApplication()
+        app.collectionViews.cells.otherElements.containing(.image, identifier:"Search_bg").children(matching: .other).element(boundBy: 1).tap()
+        app.tables.staticTexts["Offline geocode"].tap()
+        app.navigationBars["Offline geocode"].buttons["Switch to full screen mode"].tap()
+        
+        let mapviewElement = app.otherElements["MapView"]
+        mapviewElement.doubleTap()
+        mapviewElement.tap()
+        
+        for i in 0...1_000_000{
+            autoreleasepool{
+                
+                let fromCoordinate = randomCoord(mapviewElement)
+                let toCoordinate = randomCoord(mapviewElement)
+                fromCoordinate.press(forDuration: 0.8, thenDragTo: toCoordinate)
+                
+                print("***")
+                print("***")
+                print(" ")
+                print(" iterations: \(i)")
+                print(" ")
+                print("***")
+                print("***")
+            }
+        }
+    }
+    
     
 }
 
