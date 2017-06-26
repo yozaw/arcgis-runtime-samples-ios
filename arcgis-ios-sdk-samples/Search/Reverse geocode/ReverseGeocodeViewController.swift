@@ -39,6 +39,8 @@ class ReverseGeocodeViewController: UIViewController, AGSGeoViewTouchDelegate {
         self.mapView.map = self.map
         self.mapView.touchDelegate = self
         
+        self.mapView.interactionOptions.allowMagnifierToPan = false
+        
         //add the graphics overlay
         self.mapView.graphicsOverlays.add(self.graphicsOverlay)
         
