@@ -256,8 +256,13 @@ class OfflineRoutingViewController: UIViewController, AGSGeoViewTouchDelegate {
         //solve for route
         self.routeTaskOperation = self.routeTask.solveRoute(with: params) { [weak self] (routeResult:AGSRouteResult?, error:Error?) -> Void in
             
-            if let error = error as NSError?, error.code != NSUserCancelledError {
-                print(error)
+            if let error = error as NSError? {
+                if error.domain == NSCocoaErrorDomain && error.code == NSUserCancelledError{
+                    return
+                }
+                else{
+                    print(error)
+                }
             }
             else {
                 //handle the route result
