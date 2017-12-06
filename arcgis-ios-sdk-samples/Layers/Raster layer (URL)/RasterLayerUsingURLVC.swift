@@ -52,7 +52,6 @@ class RasterLayerUsingURLVC : UIViewController {
             }
             
             if let center = self?.rasterLayer.fullExtent?.center {
-                //self?.mapView.setViewpoint(AGSViewpoint(targetExtent: extent))
                 self?.mapView.setViewpoint(AGSViewpoint(center: center, scale: 40000000))
             }
         }
