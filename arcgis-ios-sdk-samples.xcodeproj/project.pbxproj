@@ -25,6 +25,11 @@
 		127E11D71FD0C3F8002CBD12 /* WMTSLayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127E11D51FD0C3F8002CBD12 /* WMTSLayer.storyboard */; };
 		127E11D81FD0C3F8002CBD12 /* WMTSLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127E11D61FD0C3F8002CBD12 /* WMTSLayerViewController.swift */; };
 		127E11D91FD0C457002CBD12 /* WMTSLayerViewController.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 127E11D61FD0C3F8002CBD12 /* WMTSLayerViewController.swift */; };
+		12FB1477200EBC8100F8814A /* ViewshedSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FB1472200EBC8100F8814A /* ViewshedSettingsVC.swift */; };
+		12FB1478200EBC8100F8814A /* ViewshedLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FB1473200EBC8100F8814A /* ViewshedLocationViewController.swift */; };
+		12FB1479200EBC8100F8814A /* ViewshedLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12FB1474200EBC8100F8814A /* ViewshedLocation.storyboard */; };
+		12FB147C200EBD2000F8814A /* ViewshedLocationViewController.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12FB1473200EBC8100F8814A /* ViewshedLocationViewController.swift */; };
+		12FB147D200EBD2F00F8814A /* ViewshedSettingsVC.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 12FB1472200EBC8100F8814A /* ViewshedSettingsVC.swift */; };
 		166E8F9D1EE62E0E00C57C46 /* RasterLayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166E8F9B1EE62E0E00C57C46 /* RasterLayer.storyboard */; };
 		166E8F9E1EE62E0E00C57C46 /* RasterLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166E8F9C1EE62E0E00C57C46 /* RasterLayerViewController.swift */; };
 		166E8F9F1EE62E2400C57C46 /* RasterLayerViewController.swift in CopyFiles */ = {isa = PBXBuildFile; fileRef = 166E8F9C1EE62E0E00C57C46 /* RasterLayerViewController.swift */; };
@@ -512,6 +517,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				12FB147D200EBD2F00F8814A /* ViewshedSettingsVC.swift in CopyFiles */,
+				12FB147C200EBD2000F8814A /* ViewshedLocationViewController.swift in CopyFiles */,
 				E4B2E26C1FE3321500E610FF /* ViewshedGeoElementViewController.swift in CopyFiles */,
 				10859BAF1FE0AC8100F6E552 /* FeatureLayerExtrusionViewController.swift in CopyFiles */,
 				D9316A651FDB4F850075AD92 /* ReadGeopackageViewController.swift in CopyFiles */,
@@ -682,6 +689,9 @@
 		1259FB911FD295C90037105E /* WMSLayerUsingURLViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSLayerUsingURLViewController.swift; sourceTree = "<group>"; };
 		127E11D51FD0C3F8002CBD12 /* WMTSLayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WMTSLayer.storyboard; sourceTree = "<group>"; };
 		127E11D61FD0C3F8002CBD12 /* WMTSLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMTSLayerViewController.swift; sourceTree = "<group>"; };
+		12FB1472200EBC8100F8814A /* ViewshedSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewshedSettingsVC.swift; sourceTree = "<group>"; };
+		12FB1473200EBC8100F8814A /* ViewshedLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewshedLocationViewController.swift; sourceTree = "<group>"; };
+		12FB1474200EBC8100F8814A /* ViewshedLocation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewshedLocation.storyboard; sourceTree = "<group>"; };
 		166E8F9B1EE62E0E00C57C46 /* RasterLayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = RasterLayer.storyboard; path = "Layers/Raster layer (file)/RasterLayer.storyboard"; sourceTree = "<group>"; };
 		166E8F9C1EE62E0E00C57C46 /* RasterLayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RasterLayerViewController.swift; path = "Layers/Raster layer (file)/RasterLayerViewController.swift"; sourceTree = "<group>"; };
 		2182C9801FDA01A0003E3A0F /* StatisticalQuery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StatisticalQuery.storyboard; sourceTree = "<group>"; };
@@ -1097,6 +1107,16 @@
 			path = "Layers/WMTS layer";
 			sourceTree = "<group>";
 		};
+		12FB1471200EBC8100F8814A /* Viewshed (location) */ = {
+			isa = PBXGroup;
+			children = (
+				12FB1472200EBC8100F8814A /* ViewshedSettingsVC.swift */,
+				12FB1473200EBC8100F8814A /* ViewshedLocationViewController.swift */,
+				12FB1474200EBC8100F8814A /* ViewshedLocation.storyboard */,
+			);
+			path = "Viewshed (location)";
+			sourceTree = "<group>";
+		};
 		166E8F951EE4DF6C00C57C46 /* Raster layer (file) */ = {
 			isa = PBXGroup;
 			children = (
@@ -1156,6 +1176,7 @@
 				3E0B584A1E36BCCD00951767 /* Analyze viewshed */,
 				2182C97F1FDA01A0003E3A0F /* Statistical query */,
 				E4B2E2671FE31E7400E610FF /* Viewshed (GeoElement) */,
+				12FB1471200EBC8100F8814A /* Viewshed (location) */,
 			);
 			path = Analysis;
 			sourceTree = "<group>";
@@ -2747,6 +2768,7 @@
 				TargetAttributes = {
 					3E23A9DF1AFC28F6002E2214 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = P8HGHS7JQ8;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -2935,6 +2957,7 @@
 				3EFCE1C81CF38A9C00E02F67 /* SanFrancisco.mmpk in Resources */,
 				3ED028B21B8E3A9800ACA70D /* TLUsingURL.storyboard in Resources */,
 				3E0B584D1E36BCCD00951767 /* AnalyzeHotspots.storyboard in Resources */,
+				12FB1479200EBC8100F8814A /* ViewshedLocation.storyboard in Resources */,
 				3E6C771C1CCFC53B00E89873 /* IdentifyLayers.storyboard in Resources */,
 				D9ED2DA91FD759190043BFE1 /* AuroraCO.gpkg in Resources */,
 				E4B2E26B1FE31EEA00E610FF /* ViewshedGeoElement.storyboard in Resources */,
@@ -2999,6 +3022,7 @@
 				3EEA06101D21C44000E03774 /* DisplaySceneViewController.swift in Sources */,
 				10859BAC1FE0AAE400F6E552 /* FeatureLayerExtrusionViewController.swift in Sources */,
 				3E8526381B90D92700690EBD /* BookmarksListViewController.swift in Sources */,
+				12FB1478200EBC8100F8814A /* ViewshedLocationViewController.swift in Sources */,
 				3E8A05CE1ECE68E80032231C /* MissionSettingsViewController.swift in Sources */,
 				E4C4A44B1EE9DDDD0073B6C0 /* DistanceCompositeSymbolViewController.swift in Sources */,
 				3ED0286A1B8E3A8500ACA70D /* SetViewpointViewController.swift in Sources */,
@@ -3061,6 +3085,7 @@
 				3ED0288E1B8E3A8500ACA70D /* SetInitialMapAreaViewController.swift in Sources */,
 				2182C9831FDA01A0003E3A0F /* StatisticalQueryViewController.swift in Sources */,
 				3E81C1B91D8A0EF700470AA4 /* VectorTileCustomStyleVC.swift in Sources */,
+				12FB1477200EBC8100F8814A /* ViewshedSettingsVC.swift in Sources */,
 				3EABC7931DB1772000C161C6 /* RGBRendererTypeCell.swift in Sources */,
 				3EABC7CB1DB1947500C161C6 /* BlendRendererViewController.swift in Sources */,
 				3E0B58511E36BCCD00951767 /* AnalyzeViewshedViewController.swift in Sources */,
@@ -3267,7 +3292,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P8HGHS7JQ8;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3284,7 +3309,7 @@
 					"-l",
 					"c++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.arcgis-ios-sdk-samples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3301,7 +3326,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = P8HGHS7JQ8;
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -3318,7 +3343,7 @@
 					"-l",
 					"c++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esri.arcgis-ios-sdk-samples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
