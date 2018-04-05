@@ -116,7 +116,8 @@ class ContentTableViewController: UITableViewController, CustomSearchHeaderViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as! ContentTableCell
 
         let node = self.nodesArray[(indexPath as NSIndexPath).row]
-        cell.titleLabel.text = node.displayName
+        //cell.titleLabel.text = node.displayName
+        cell.titleLabel.text = node.displayNameJp
         
         if self.expandedRowIndex == (indexPath as NSIndexPath).row {
             cell.detailLabel.text = node.descriptionText
@@ -222,7 +223,8 @@ class ContentTableViewController: UITableViewController, CustomSearchHeaderViewD
         
         let storyboard = UIStoryboard(name: node.storyboardName, bundle: Bundle.main)
         let controller = storyboard.instantiateInitialViewController()!
-        controller.title = node.displayName
+        //controller.title = node.displayName
+        controller.title = node.displayNameJp
         let navController = UINavigationController(rootViewController: controller)
         
         self.splitViewController?.showDetailViewController(navController, sender: self)

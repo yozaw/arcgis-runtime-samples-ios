@@ -82,6 +82,9 @@ class ContentCollectionViewController: UIViewController, UICollectionViewDataSou
         if let dependency = dict["dependency"] as? [String] {
             node.dependency.append(contentsOf: dependency)
         }
+        if let displayNameJp = dict["displayNameJp"] as? String {
+            node.displayNameJp = displayNameJp
+        }
         return node
     }
     
@@ -146,7 +149,9 @@ class ContentCollectionViewController: UIViewController, UICollectionViewDataSou
         cell.layer.masksToBounds = false
         
         //name
-        cell.nameLabel.text = node.displayName.uppercased()
+        //cell.nameLabel.text = node.displayName.uppercased()
+        cell.nameLabel.text = node.displayNameJp.uppercased()
+
         
         //icon
         let image = UIImage(named: "\(node.displayName)_icon")

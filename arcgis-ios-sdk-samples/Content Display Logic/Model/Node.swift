@@ -22,4 +22,5 @@ class Node: NSObject {
     var children:[Node]!  //if nil, then root node
     var dependency = [String]()
 //    var readmeURLString:String!
+    var displayNameJp:String!
 }
