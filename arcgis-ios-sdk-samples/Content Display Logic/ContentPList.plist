@@ -14,12 +14,12 @@
 				<string>Display a map</string>
                 <key>displayNameJp</key>
                 <string>マップの表示</string>
-                <key>displayNameJp</key>
-                <string>title_jp</string>
                 <key>storyboardName</key>
 				<string>DisplayMap</string>
 				<key>descriptionText</key>
-				<string>This sample shows you how to display a map with imagery basemap</string>
+				<!--  <string>This sample shows you how to display a map with imagery basemap</string> -->
+                <string>ArcGIS Online の衛星画像のベースマップを表示します。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -29,7 +29,9 @@
                 <key>storyboardName</key>
 				<string>ChangeMapViewBackground</string>
 				<key>descriptionText</key>
-				<string>This sample shows you how to customize map view&apos;s background grid</string>
+				<!--  <string>This sample shows you how to customize map view&apos;s background grid</string> -->
+                <string>マップの背景のグリッドをカスタマイズします。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -39,7 +41,8 @@
                 <key>storyboardName</key>
 				<string>MapLoaded</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to tell what the map&apos;s load status is</string>
+				<!--  <string>This sample shows how to tell what the map&apos;s load status is</string> -->
+                <string>マップの背景のグリッドをカスタマイズします。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -49,7 +52,8 @@
                 <key>storyboardName</key>
 				<string>OpenExistingMap</string>
 				<key>descriptionText</key>
-				<string>This sample shows you how to open an existing map using its url</string>
+				<!-- <string>This sample shows you how to open an existing map using its url</string> -->
+                <string>URL を指定して ArcGIS Online 上にある Web マップを開きます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -71,7 +75,8 @@
                 <key>storyboardName</key>
 				<string>SetInitialMapArea</string>
 				<key>descriptionText</key>
-				<string>You can also specify an area or enveloper as the initial view for the map to start with</string>
+				<!-- <string>You can also specify an area or enveloper as the initial view for the map to start with</string> -->
+                <string>エクステントを使用してマップの初期表示範囲を設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -81,7 +86,9 @@
                 <key>storyboardName</key>
 				<string>SetInitialMapLocation</string>
 				<key>descriptionText</key>
-				<string>You can set the initial location for a map by passing in the coordinates and the zoom level</string>
+				<!-- <string>You can set the initial location for a map by passing in the coordinates and the zoom level</string> -->
+                <string>中心座標とズーム レベルを指定してマップの初期表示位置を設定します。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -91,7 +98,8 @@
                 <key>storyboardName</key>
 				<string>SetMapsSpatialReference</string>
 				<key>descriptionText</key>
-				<string>You can initialize a map by specifying the spatial reference. If you add any layer with a different spatial reference it will re-project</string>
+				<!-- <string>You can initialize a map by specifying the spatial reference. If you add any layer with a different spatial reference it will re-project</string> -->
+                <string>空間参照を指定してマップを初期化します。異なる空間参照のレイヤーを追加した場合は再投影されて表示されます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -101,17 +109,19 @@
                 <key>storyboardName</key>
 				<string>ManageMapLayers</string>
 				<key>descriptionText</key>
-				<string>This sample shows you how to manage layers in a map. You can reorder them, delete an existing layer or insert a new layer</string>
+				<!-- <string>This sample shows you how to manage layers in a map. You can reorder them, delete an existing layer or insert a new layer</string> -->
+                <string>マップの操作レイヤーの並べ替え、レイヤーの削除、レイヤーの追加を行います。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>Manage bookmarks</string>
                 <key>displayNameJp</key>
-                <string>title_jp</string>
+                <string>ブックマーク</string>
                 <key>storyboardName</key>
-				<string>ブックマーク</string>
+				<string>Bookmarks</string>
 				<key>descriptionText</key>
-				<string>Now you can add and view bookmarks on a map</string>
+				<!-- <string>Now you can add and view bookmarks on a map</string> -->
+                <string>ブックマークの表示、新しいブックマークの追加を行います。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -121,27 +131,31 @@
                 <key>storyboardName</key>
 				<string>MapViewDrawStatus</string>
 				<key>descriptionText</key>
-				<string>Every time the map is drawing you get an update using the callbacks</string>
+				<!-- <string>Every time the map is drawing you get an update using the callbacks</string> -->
+                <string>マップ操作によるマップの描画状態の更新を監視します。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
-				<string>レイヤーの表示状態</string>
+				<string>Display layer view state</string>
                 <key>displayNameJp</key>
-                <string>title_jp</string>
+                <string>レイヤーの表示状態</string>
                 <key>storyboardName</key>
 				<string>LayerStatus</string>
 				<key>descriptionText</key>
-				<string>You can get the view status for each layer in your map. It tells you if the that layer is currently active or not currently visible or if an error occured while loading it etc</string>
+				<!-- <string>You can get the view status for each layer in your map. It tells you if the that layer is currently active or not currently visible or if an error occured while loading it etc</string> -->
+                <string>マップ内の各レイヤーの表示状態を表示します。ロード中、表示中、表示スケール外などの状態を確認できます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
-				<string>ビューポイントの変更</string>
+				<string>Change viewpoint</string>
                 <key>displayNameJp</key>
-                <string>title_jp</string>
+                <string>ビューポイントの変更</string>
                 <key>storyboardName</key>
 				<string>SetViewpoint</string>
 				<key>descriptionText</key>
-				<string>You can change the viewpoint of a map view and there are different ways you can do this. You can use a geometry or a point, etc. with or without animation</string>
+				<!-- <string>You can change the viewpoint of a map view and there are different ways you can do this. You can use a geometry or a point, etc. with or without animation</string> -->
+                <string>マップの表示場所を変更するためのビュー ポイントを設定します。中心のポイント/スケールやポリゴンを使用したり、ズーム時にアニメーションを使用するかどうか等を設定できます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -151,7 +165,8 @@
                 <key>storyboardName</key>
 				<string>MapRotation</string>
 				<key>descriptionText</key>
-				<string>This sample shows you how to rotate a map view. You can pinch to rotate or do it programmatically.</string>
+				<!-- <string>This sample shows you how to rotate a map view. You can pinch to rotate or do it programmatically.</string> -->
+                <string>マップをタッチ操作かプログラムで回転させます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -161,7 +176,8 @@
                 <key>storyboardName</key>
 				<string>ShowMagnifier</string>
 				<key>descriptionText</key>
-				<string>You can tap and hold on the map to get a magnifier</string>
+				<!-- <string>You can tap and hold on the map to get a magnifier</string> -->
+                <string>タップ＆ホールドの操作でマップの拡大鏡を表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -171,7 +187,8 @@
                 <key>storyboardName</key>
 				<string>DisplayLocation</string>
 				<key>descriptionText</key>
-				<string>You can start the location display on the map view to get current location updates. There are different auto pan modes you can switch between, namely, re-center mode, navigation mode or compass mode</string>
+				<!-- <string>You can start the location display on the map view to get current location updates. There are different auto pan modes you can switch between, namely, re-center mode, navigation mode or compass mode</string> -->
+                <string>移動モード（re-center/navigation/compass）を設定してデバイスの現在位置をマップ上に表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -181,7 +198,8 @@
                 <key>storyboardName</key>
 				<string>MapViewScreenshot</string>
 				<key>descriptionText</key>
-				<string>You can now take a screenshot of the map view. You can use it as the thumbnail for you newly created map or simply share it with your co-workers</string>
+				<!-- <string>You can now take a screenshot of the map view. You can use it as the thumbnail for you newly created map or simply share it with your co-workers</string> -->
+                <string>現在のマップの表示状態のスクリーンショットの画像を作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -191,7 +209,8 @@
                 <key>storyboardName</key>
 				<string>CreateSaveMap</string>
 				<key>descriptionText</key>
-				<string>With the new APIs you get to author a map on you mobile device. You can create a map by adding a basemap and one or more operational layers and save it to your portal</string>
+				<!-- <string>With the new APIs you get to author a map on you mobile device. You can create a map by adding a basemap and one or more operational layers and save it to your portal</string> -->
+                <string>デバイスでベースマップと操作用のレイヤーを選択し、マップを作成します。作成したマップを ArcGIS Online に Web マップとして保存します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -201,7 +220,8 @@
                 <key>storyboardName</key>
 				<string>IdentifyLayers</string>
 				<key>descriptionText</key>
-				<string>You can tap on map and get all the elements present at that location from different layers</string>
+				<!-- <string>You can tap on map and get all the elements present at that location from different layers</string> -->
+                <string>マップに追加されたレイヤーからタップした場所にあるフィーチャを取得します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -211,7 +231,8 @@
                 <key>storyboardName</key>
 				<string>OpenMobileMapPackage</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to open a mobile map from a mobile map package</string>
+				<!-- <string>This sample shows how to open a mobile map from a mobile map package</string> -->
+                <string>モバイル マップ パッケージ内のマップを表示します。</string>
 				<key>dependency</key>
 				<array>
 					<string>YellowstoneMMPK</string>
@@ -225,7 +246,8 @@
                 <key>storyboardName</key>
 				<string>MobileMapSearchRoute</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to search and route using data in a map package</string>
+				<!-- <string>This sample shows how to search and route using data in a map package</string> -->
+                <string>モバイル マップ パッケージ内のデータを使用して、住所検索とルート検索を行います。</string>
 				<key>dependency</key>
 				<array>
 					<string>YellowstoneMMPK</string>
@@ -240,7 +262,8 @@
                 <key>storyboardName</key>
 				<string>GenerateOfflineMap</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to generate an offline map for web map in ArcGIS Portal. The sample requires login to take AGOL Basemap offline.</string>
+				<!-- <string>This sample demonstrates how to generate an offline map for web map in ArcGIS Portal. The sample requires login to take AGOL Basemap offline.</string> -->
+                <string>Web マップからオフライン用のマップを作成します。ArcGIS Online のベースマップをダウンロードするために、ArcGIS Online へのログインが必要です。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -250,7 +273,8 @@
                 <key>storyboardName</key>
 				<string>ReadGeopackage</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to add layers to a map from a geopackage.</string>
+				<!-- <string>This sample shows how to add layers to a map from a geopackage.</string> -->
+                <string>GeoPackage 内のレイヤーをマップに追加します。</string>
 				<key>dependency</key>
 				<array>
 					<string>AuroraCOGeopackage</string>
@@ -273,7 +297,8 @@
                 <key>storyboardName</key>
 				<string>TLUsingURL</string>
 				<key>descriptionText</key>
-				<string>You can create a tiled layer using the url to the service</string>
+				<!-- <string>You can create a tiled layer using the url to the service</string> -->
+                <string>Web サービスの URL を指定してタイル レイヤーを作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -283,7 +308,8 @@
                 <key>storyboardName</key>
 				<string>LocalTiledLayer</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to load an offline copy of a tiled map service so that that basemap tiled service is available when applications are offline</string>
+				<!-- <string>This sample shows how to load an offline copy of a tiled map service so that that basemap tiled service is available when applications are offline</string> -->
+                <string>タイル パッケージ ファイルをコピーして、オフラインでタイル形式のレイヤーをベースマップとして表示します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SanFranciscoTilePackage</string>
@@ -298,7 +324,8 @@
                 <key>storyboardName</key>
 				<string>ExportTiles</string>
 				<key>descriptionText</key>
-				<string>You can create a tpk from a map service</string>
+				<!-- <string>You can create a tpk from a map service</string> -->
+                <string>タイル マップ サービスからタイル パッケージをエクスポートしてオフラインで表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -308,7 +335,8 @@
                 <key>storyboardName</key>
 				<string>MILUsingURL</string>
 				<key>descriptionText</key>
-				<string>You can use the url to a map server to create a map image layer</string>
+				<!-- <string>You can use the url to a map server to create a map image layer</string> -->
+                <string>マップ サービスの URL を指定してマップ イメージ レイヤーとして表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -318,7 +346,8 @@
                 <key>storyboardName</key>
 				<string>ChangeSublayerRenderer</string>
 				<key>descriptionText</key>
-				<string>You can change the renderer of a sublayer in a map image layer</string>
+				<!-- <string>You can change the renderer of a sublayer in a map image layer</string> -->
+                <string>マップ イメージ レイヤーのサブレイヤーのレンダラーを変更します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -328,7 +357,8 @@
                 <key>storyboardName</key>
 				<string>SublayerVisibility</string>
 				<key>descriptionText</key>
-				<string>You can show or hide individual sublayers in a map image layer</string>
+				<!-- <string>You can show or hide individual sublayers in a map image layer</string> -->
+                <string>マップ イメージ レイヤーのサブレイヤーの表示・非表示を切り替えます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -338,7 +368,8 @@
                 <key>storyboardName</key>
 				<string>ManageSublayers</string>
 				<key>descriptionText</key>
-				<string>This sample shows to add or remove map image sublayers and how to re-arrange existing sublayers in a map image layer</string>
+				<!-- <string>This sample shows to add or remove map image sublayers and how to re-arrange existing sublayers in a map image layer</string> -->
+                <string>マップ イメージ レイヤーのサブレイヤーをマップに追加・削除します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -348,7 +379,8 @@
                 <key>storyboardName</key>
 				<string>VectorTileLayer</string>
 				<key>descriptionText</key>
-				<string>You can now add vector tile layers</string>
+				<!-- <string>You can now add vector tile layers</string> -->
+                <string>ベクター タイル レイヤーを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -358,7 +390,8 @@
                 <key>storyboardName</key>
 				<string>VectorTileCustomStyle</string>
 				<key>descriptionText</key>
-				<string>You can define different styles for same vector tiled layer using custom stylesheets</string>
+				<!-- <string>You can define different styles for same vector tiled layer using custom stylesheets</string> -->
+                <string>スタイル シートを設定して、ベクター タイル レイヤーのスタイルをカスタマイズします。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -368,7 +401,8 @@
                 <key>storyboardName</key>
 				<string>WebTiledLayer</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to display map tiles from an online resource</string>
+				<!-- <string>This sample demonstrates how to display map tiles from an online resource</string>-->
+                <string>Web タイル レイヤーを使用してオンライン上で公開されているマップ タイルを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -378,7 +412,9 @@
                 <key>storyboardName</key>
 				<string>RasterFunctionService</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to create an image service raster and apply a Hillshade raster function to it.</string>
+				<!-- <string>This sample demonstrates how to create an image service raster and apply a Hillshade raster function to it.</string>-->
+                <string>イメージ サービスで公開されるラスタを使用して、陰影起伏ラスタ関数を実行します。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -388,7 +424,9 @@
                 <key>storyboardName</key>
 				<string>RasterLayer</string>
 				<key>descriptionText</key>
-				<string>You can create a raster layer from a file</string>
+				<!-- <string>You can create a raster layer from a file</string>-->
+                <string>画像ファイルからラスター レイヤーを作成します。</string>
+
 				<key>dependency</key>
 				<array>
 					<string>ShastaRaster</string>
@@ -402,7 +440,8 @@
                 <key>storyboardName</key>
 				<string>RasterLayerGPKG</string>
 				<key>descriptionText</key>
-				<string>Show a raster layer on a map using a geopackage</string>
+				<!-- <string>Show a raster layer on a map using a geopackage</string>-->
+                <string>GeoPackage 内のラスターからラスター レイヤーを作成します。</string>
 				<key>dependency</key>
 				<array>
 					<string>AuroraCOGeopackage</string>
@@ -416,7 +455,8 @@
                 <key>storyboardName</key>
 				<string>RasterLayerUsingService</string>
 				<key>descriptionText</key>
-				<string>You can create a raster layer from an ArcGIS Image service</string>
+				<!-- <string>You can create a raster layer from an ArcGIS Image service</string> -->
+                <string>ArcGIS Server のイメージ サービスで公開されるラスターからラスター レイヤーを作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -426,7 +466,8 @@
                 <key>storyboardName</key>
 				<string>HillshadeRenderer</string>
 				<key>descriptionText</key>
-				<string>You can apply hill shade renderer to a raster</string>
+				<!-- <string>You can apply hill shade renderer to a raster</string> -->
+                <string>ラスター レイヤーに陰影起伏レンダラーを設定します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SRTMRaster</string>
@@ -440,7 +481,8 @@
                 <key>storyboardName</key>
 				<string>BlendRenderer</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to use blend renderer with raster layer</string>
+				<!-- <string>The sample shows you how to use blend renderer with raster layer</string> -->
+                <string>ラスター レイヤーにブレンド レンダラーを設定します。</string>
 				<key>dependency</key>
 				<array>
 					<string>ShastaElevationRaster</string>
@@ -455,7 +497,8 @@
                 <key>storyboardName</key>
 				<string>RGBRenderer</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to use rgb renderer with raster layer</string>
+				<!-- <string>The sample shows you how to use rgb renderer with raster layer</string> -->
+                <string>ラスター レイヤーに RGB レンダラーを設定します。</string>
 				<key>dependency</key>
 				<array>
 					<string>ShastaRaster</string>
@@ -469,7 +512,8 @@
                 <key>storyboardName</key>
 				<string>StretchRenderer</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to use stretch renderer with raster layer</string>
+				<!-- <string>The sample shows you how to use stretch renderer with raster layer</string> -->
+                <string>ラスター レイヤーにストレッチ レンダラーを設定します。</string>
 				<key>dependency</key>
 				<array>
 					<string>ShastaBWRaster</string>
@@ -483,7 +527,8 @@
                 <key>storyboardName</key>
 				<string>WMTSLayer</string>
 				<key>descriptionText</key>
-				<string>Display a WMTS layer as a basemap layer</string>
+				<!-- <string>Display a WMTS layer as a basemap layer</string> -->
+                <string>WMTS レイヤーをベースマップとして表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -493,7 +538,8 @@
                 <key>storyboardName</key>
 				<string>WMSLayerUsingURL</string>
 				<key>descriptionText</key>
-				<string>Open a WMS layer from a URL and display it in a map</string>
+				<!-- <string>Open a WMS layer from a URL and display it in a map</string> -->
+                <string>URL を指定して WMS レイヤーを表示します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -512,7 +558,8 @@
                 <key>storyboardName</key>
 				<string>FeatureLayerURL</string>
 				<key>descriptionText</key>
-				<string>Show a feature layer on map using the url to the service</string>
+				<!-- <string>Show a feature layer on map using the url to the service</string> -->
+                <string>フィーチャ サービスの URL を指定してフィーチャ レイヤーを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -522,7 +569,8 @@
                 <key>storyboardName</key>
 				<string>FeatureLayerGDB</string>
 				<key>descriptionText</key>
-				<string>Show a feature layer on map using a geodatabase</string>
+                <!-- <string>Show a feature layer on map using a geodatabase</string> -->
+                <string>geodatabase ファイルを使用してフィーチャ レイヤーを表示します。</string>
 				<key>dependency</key>
 				<array>
 					<string>LATrailsGeodatabase</string>
@@ -536,7 +584,8 @@
                 <key>storyboardName</key>
 				<string>FeatureLayerGPKG</string>
 				<key>descriptionText</key>
-				<string>Show a feature layer on a map using a geopackage</string>
+				<!-- <string>Show a feature layer on a map using a geopackage</string> -->
+                <string>GeoPackage を使用してフィーチャ レイヤーを表示します。</string>
 				<key>dependency</key>
 				<array>
 					<string>AuroraCOGeopackage</string>
@@ -550,7 +599,8 @@
                 <key>storyboardName</key>
 				<string>FeatureLayerShapefile</string>
 				<key>descriptionText</key>
-				<string>Show a feature layer on a map using a shapefile</string>
+				<!-- <string>Show a feature layer on a map using a shapefile</string> -->
+                <string>Shapefile を使用してフィーチャ レイヤーを表示します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SubdivisionsShapefile</string>
@@ -564,7 +614,8 @@
                 <key>storyboardName</key>
 				<string>OnInteractionCache</string>
 				<key>descriptionText</key>
-				<string>There are different request modes you can load your feature layer in. This sample uses the &quot;On Interaction Cache Mode&quot;.</string>
+				<!-- <string>There are different request modes you can load your feature layer in. This sample uses the &quot;On Interaction Cache Mode&quot;.</string> -->
+                <string>Shapefile を使用してフィーチャ レイヤーを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -574,7 +625,8 @@
                 <key>storyboardName</key>
 				<string>OnInteractionNoCache</string>
 				<key>descriptionText</key>
-				<string>There are different request modes you can load your feature layer in. This sample uses the &quot;On Interaction No Cache Mode&quot;.</string>
+				<!-- <string>There are different request modes you can load your feature layer in. This sample uses the &quot;On Interaction No Cache Mode&quot;.</string> -->
+                <string>On Interaction No Cache モード (フィーチャのキャッシュされない) を使用してフィーチャ レイヤーを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -584,7 +636,8 @@
                 <key>storyboardName</key>
 				<string>ManualCache</string>
 				<key>descriptionText</key>
-				<string>There are different request modes you can load your feature layer in. This sample uses the &quot;Manual Cache Mode&quot;.</string>
+				<!-- <string>There are different request modes you can load your feature layer in. This sample uses the &quot;Manual Cache Mode&quot;.</string> -->
+                <string>Manual Cache Mode モード (フィーチャを手動でリクエストする) を使用してフィーチャ レイヤーを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -594,7 +647,8 @@
                 <key>storyboardName</key>
 				<string>FLSelection</string>
 				<key>descriptionText</key>
-				<string>You can tap on the map to select or unselect features in a feature layer</string>
+				<!-- <string>You can tap on the map to select or unselect features in a feature layer</string> -->
+                <string>フィーチャ レイヤーのフィーチャをタップして、フィーチャを選択・選択解除します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -604,7 +658,8 @@
                 <key>storyboardName</key>
 				<string>FLQuery</string>
 				<key>descriptionText</key>
-				<string>You can query features in feature layer via service feature table. In this sample you can query for States in USA</string>
+				<!-- <string>You can query features in feature layer via service feature table. In this sample you can query for States in USA</string> -->
+                <string>フィーチャ レイヤーのフィーチャをサービス フィーチャ テーブルを介してクエリします。アメリカの州名で検索します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -614,7 +669,8 @@
                 <key>storyboardName</key>
 				<string>DefinitionExpression</string>
 				<key>descriptionText</key>
-				<string>You can set the definition expression on the feature layer to load specific features</string>
+				<!-- <string>You can set the definition expression on the feature layer to load specific features</string> -->
+                <string>特定のフィーチャのみを表示するためにフィルター定義を設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -624,7 +680,8 @@
                 <key>storyboardName</key>
 				<string>OverrideRenderer</string>
 				<key>descriptionText</key>
-				<string>The feature layer comes with a default renderer but you can also override this renderer using your custom renderer</string>
+				<!-- <string>The feature layer comes with a default renderer but you can also override this renderer using your custom renderer</string>-->
+                <string>フィーチャ レイヤーのレンダラーを変更、デフォルトのレンダラーにリセットします。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -634,7 +691,8 @@
                 <key>storyboardName</key>
 				<string>GenerateGeodatabase</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to take features offline</string>
+				<!-- <string>The sample shows you how to take features offline</string>-->
+                <string>フィーチャ サービスからフィーチャをダウンロードしてオフラインで使用します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SanFranciscoTilePackage</string>
@@ -648,7 +706,8 @@
                 <key>storyboardName</key>
 				<string>FeatureCollectionLayer</string>
 				<key>descriptionText</key>
-				<string>Show a feature collection layer using a URL to the service</string>
+				<!-- <string>Show a feature collection layer using a URL to the service</string>-->
+                <string>フィーチャ コレクション レイヤーを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -658,17 +717,19 @@
                 <key>storyboardName</key>
 				<string>FeatureCollectionLayerQuery</string>
 				<key>descriptionText</key>
-				<string>Use a feature collection layer to show query results from a service feature table</string>
+				<!-- <string>Use a feature collection layer to show query results from a service feature table</string>-->
+                <string>フィーチャ テーブルのクエリ結果をフィーチャ コレクション レイヤーを使用して表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>List related features</string>
                 <key>displayNameJp</key>
-                <string>関連テーブルの表示</string>
+                <string>関連フィーチャの表示</string>
                 <key>storyboardName</key>
 				<string>ListRelatedFeatures</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to query related features for a given feature. Tap on a feature on the map to see its related features</string>
+				<!-- <string>This sample shows how to query related features for a given feature. Tap on a feature on the map to see its related features</string>-->
+                <string>特定のフィーチャの関連フィーチャをクエリします。マップ上のフィーチャをタップして、関連フィーチャを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -678,7 +739,8 @@
                 <key>storyboardName</key>
 				<string>AddDeleteRelatedFeatures</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to add or delete related features to an origin feature</string>
+				<!-- <string>This sample shows how to add or delete related features to an origin feature</string>>-->
+                <string>特定のフィーチャの関連フィーチャを追加・削除します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -688,7 +750,8 @@
                 <key>storyboardName</key>
 				<string>TimeBasedQuery</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to apply a time-based parameter to a feature layer query</string>
+				<!-- <string>This sample demonstrates how to apply a time-based parameter to a feature layer query</string>-->
+                <string>フィーチャ レイヤーのクエリに時間のパラメーターを設定します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -707,7 +770,8 @@
                 <key>storyboardName</key>
 				<string>GORenderers</string>
 				<key>descriptionText</key>
-				<string>You can add graphics to a map using the new Graphics Overlay</string>
+				<!-- <string>You can add graphics to a map using the new Graphics Overlay</string>-->
+                <string>グラフィックス オーバレイにレンダラーを設定して、グラフィックを追加します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -717,7 +781,8 @@
                 <key>storyboardName</key>
 				<string>GraphicsWithSymbols</string>
 				<key>descriptionText</key>
-				<string>You can add graphics to a map using the new Graphics Overlay and specify symbol for each graphic</string>
+				<!-- <string>You can add graphics to a map using the new Graphics Overlay and specify symbol for each graphic</string>-->
+                <string>個々のグラフィックにシンボルを設定して、グラフィックス オーバレイにグラフィックを追加します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -727,7 +792,8 @@
                 <key>storyboardName</key>
 				<string>GOIdentify</string>
 				<key>descriptionText</key>
-				<string>You can use the identify method on map view to get the graphics at a location. It could be the location, user interacted with, via tap gesture or simply some custom location</string>
+				<!-- <string>You can use the identify method on map view to get the graphics at a location. It could be the location, user interacted with, via tap gesture or simply some custom location</string>-->
+                <string>マップ上でタップした場所にあるグラフィックを取得します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -737,7 +803,8 @@
                 <key>storyboardName</key>
 				<string>GraphicDrawOrder</string>
 				<key>descriptionText</key>
-				<string>You can change the drawing order of graphics in graphics overlay using the z index</string>
+				<!-- <string>You can change the drawing order of graphics in graphics overlay using the z index</string>-->
+                <string>z インデックスを指定してグラフィックス オーバレイのグラフィックの表示順序を変更します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -747,7 +814,8 @@
                 <key>storyboardName</key>
 				<string>Sketch</string>
 				<key>descriptionText</key>
-				<string>You can use the sketch editor for sketching on your map</string>
+				<!-- <string>You can use the sketch editor for sketching on your map</string>-->
+                <string>マップ上で作図するためのスケッチ エディタを使用します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -757,7 +825,8 @@
                 <key>storyboardName</key>
 				<string>Callout</string>
 				<key>descriptionText</key>
-				<string>Tap on the map to get the coordinates for the location in a callout. Tap again to hide it.</string>
+				<!-- <string>Tap on the map to get the coordinates for the location in a callout. Tap again to hide it.</string>-->
+                <string>タップした場所の座標をコールアウトに表示します。再度タップすると、コールアウトを非表示にします。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -767,7 +836,8 @@
                 <key>storyboardName</key>
 				<string>MILShowLegend</string>
 				<key>descriptionText</key>
-				<string>Tap on the button in the toolbar to display legends for the layers on the map</string>
+				<!-- <string>Tap on the button in the toolbar to display legends for the layers on the map</string>-->
+                <string>マップに追加されたレイヤーの凡例を表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -777,7 +847,8 @@
                 <key>storyboardName</key>
 				<string>SimpleMarkerSymbol</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to create a graphic with simple marker symbol</string>
+				<!-- <string>This sample shows how to create a graphic with simple marker symbol</string>-->
+                <string>シンプル マーカー シンボルを設定したグラフィックを作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -787,7 +858,8 @@
                 <key>storyboardName</key>
 				<string>PictureMarkerSymbols</string>
 				<key>descriptionText</key>
-				<string>This sample shows how to create picture marker symbols from a remote image and an image in assets</string>
+				<!-- <string>This sample shows how to create picture marker symbols from a remote image and an image in assets</string>-->
+                <string>オンライン上にある画像とアセット内の画像を使用してピクチャ マーカー シンボルを作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -797,7 +869,8 @@
                 <key>storyboardName</key>
 				<string>SimpleRenderer</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to create a simple renderer and add it to a graphics overlay</string>
+				<!-- <string>This sample demonstrates how to create a simple renderer and add it to a graphics overlay</string>-->
+                <string>シンプル レンダラーを作成し、グラフィックに設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -807,17 +880,19 @@
                 <key>storyboardName</key>
 				<string>UniqueValueRenderer</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrate how to use a unique value renderer to style different features in a feature layer with different symbols</string>
+				<!-- <string>This sample demonstrate how to use a unique value renderer to style different features in a feature layer with different symbols</string>-->
+                <string>個別値分類レンダラーを使用して、フィーチャ レイヤーの異なるタイプのフィーチャに異なるシンボルを設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
-				<string>グリッドの表示</string>
+				<string>Display grid</string>
                 <key>displayNameJp</key>
-                <string>title_jp</string>
+                <string>グリッドの表示</string>
                 <key>storyboardName</key>
 				<string>DisplayGrid</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to display and work with coordinate system grids such as LatitudeLongitude, MGRS, UTM and USNG on a map view</string>
+				<!-- <string>This sample demonstrates how to display and work with coordinate system grids such as LatitudeLongitude, MGRS, UTM and USNG on a map view</string>-->
+                <string>マップに緯度経度、MGRS、UTM、USNG 等の座標系グリッドを表示します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -836,7 +911,8 @@
                 <key>storyboardName</key>
 				<string>FindAddress</string>
 				<key>descriptionText</key>
-				<string>Type in or select a prepopulated address to show its location on the map</string>
+				<!-- <string>Type in or select a prepopulated address to show its location on the map</string>-->
+                <string>住所を入力・選択して該当する場所をマップに表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -846,7 +922,8 @@
                 <key>storyboardName</key>
 				<string>ReverseGeocode</string>
 				<key>descriptionText</key>
-				<string>Tap on a location on the map to find the closest address</string>
+				<!-- <string>Tap on a location on the map to find the closest address</string>-->
+                <string>マップ上をタップして該当する住所を表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -856,7 +933,9 @@
                 <key>storyboardName</key>
 				<string>FindPlace</string>
 				<key>descriptionText</key>
-				<string>Search for a point of interest either nearby, near a particular location or across the world</string>
+				<!-- <string>Search for a point of interest either nearby, near a particular location or across the world</string>-->
+                <string>現在位置または特定の住所を指定して POI を検索します。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -866,7 +945,8 @@
                 <key>storyboardName</key>
 				<string>OfflineGeocode</string>
 				<key>descriptionText</key>
-				<string>Type in or select a prepopulated address to show its location on the map. Or tap and hold to get address for a point on the map. Tap, hold and move to get instant results from the locator file</string>
+				<!-- <string>Type in or select a prepopulated address to show its location on the map. Or tap and hold to get address for a point on the map. Tap, hold and move to get instant results from the locator file</string>-->
+                <string>住所を入力・選択して該当する場所をマップに表示、または、マップ上をタップして該当する住所を表示します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SanDiegoLocator</string>
@@ -890,7 +970,8 @@
                 <key>storyboardName</key>
 				<string>AddFeatures</string>
 				<key>descriptionText</key>
-				<string>Tap on a location on the map to add a new feature at that location</string>
+				<!-- <string>Tap on a location on the map to add a new feature at that location</string>-->
+                <string>タップした場所に新しいフィーチャを追加します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -900,7 +981,8 @@
                 <key>storyboardName</key>
 				<string>DeleteFeatures</string>
 				<key>descriptionText</key>
-				<string>Tap on a feature to select it and then tap on the info button to delete the feature</string>
+				<!-- <string>Tap on a feature to select it and then tap on the info button to delete the feature</string>-->
+                <string>フィーチャをタップして選択し、選択したフィーチャを削除します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -910,7 +992,8 @@
                 <key>storyboardName</key>
 				<string>EditAttributes</string>
 				<key>descriptionText</key>
-				<string>Tap on a feature to display a callout. The callout shows the damage type for that feature and an info button. To change the damage type tap on the info button and select a new on from the list shown</string>
+				<!-- <string>Tap on a feature to display a callout. The callout shows the damage type for that feature and an info button. To change the damage type tap on the info button and select a new on from the list shown</string>-->
+                <string>フィーチャをタップして選択し、新しいフィーチャ タイプを選択しフィーチャの属性を更新します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -920,7 +1003,8 @@
                 <key>storyboardName</key>
 				<string>EditGeometry</string>
 				<key>descriptionText</key>
-				<string>Tap on a feature to display a callout. To change the geomemtry of the selected feature tap on the info button. Tap on the new location on the map and tap Done to save</string>
+				<!-- <string>Tap on a feature to display a callout. To change the geomemtry of the selected feature tap on the info button. Tap on the new location on the map and tap Done to save</string>-->
+                <string>フィーチャをタップして選択し、マップ上で新しい場所をタップしてフィーチャの位置（ジオメトリ）を更新します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -930,7 +1014,8 @@
                 <key>storyboardName</key>
 				<string>EditAttachment</string>
 				<key>descriptionText</key>
-				<string>Tap on a feature to display a callout. The callout shows the number of attachments associated with that feature. Tap on the info button to open the list view. You can add, delete or download an attachment in this list</string>
+				<!-- <string>Tap on a feature to display a callout. The callout shows the number of attachments associated with that feature. Tap on the info button to open the list view. You can add, delete or download an attachment in this list</string>-->
+                <string>フィーチャをタップして選択し、フィーチャの添付ファイルを追加・削除します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -940,7 +1025,8 @@
                 <key>storyboardName</key>
 				<string>EditFeaturesOnline</string>
 				<key>descriptionText</key>
-				<string>This sample shows you how to add or edit features in an online feature layer using popups. The new popups provide inline editing for fast editing experience</string>
+				<!-- <string>This sample shows you how to add or edit features in an online feature layer using popups. The new popups provide inline editing for fast editing experience</string>-->
+                <string>ポップアップを使用して、新しくフィーチャを作成するか既存のフィーチャを編集します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SanDiegoTilePackage</string>
@@ -954,7 +1040,8 @@
                 <key>storyboardName</key>
 				<string>OfflineEditing</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to take features offline, make changes and sync them back to the service</string>
+				<!-- <string>The sample shows you how to take features offline, make changes and sync them back to the service</string>-->
+                <string>フィーチャ サービスからフィーチャをダウンロードし、オフラインでフィーチャを編集します。編集したフィーチャをフィーチャ サービスに同期します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SanFranciscoTilePackage</string>
@@ -977,7 +1064,8 @@
                 <key>storyboardName</key>
 				<string>CreateGeometries</string>
 				<key>descriptionText</key>
-				<string>The sample shows simple ways to create different types of geometries</string>
+				<!-- <string>The sample shows simple ways to create different types of geometries</string>-->
+                <string>異なるタイプのジオメトリを作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -987,7 +1075,8 @@
                 <key>storyboardName</key>
 				<string>SpatialOperations</string>
 				<key>descriptionText</key>
-				<string>The sample shows how to perform geometry operations between overlapping polygons</string>
+				<!-- <string>The sample shows how to perform geometry operations between overlapping polygons</string>-->
+                <string>重なり合うポリゴン間でジオメトリの空間解析を行います。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -997,7 +1086,8 @@
                 <key>storyboardName</key>
 				<string>FormatCoordinates</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to convert a map location Point to a number of different coordinate notations. Tap on the map or edit the values in textfields</string>
+				<!-- <string>This sample demonstrates how to convert a map location Point to a number of different coordinate notations. Tap on the map or edit the values in textfields</string>-->
+                <string>マップ上をタップするか、テキスト フィールドの値を編集して、特定の座標を異なる座標表記に変換します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -1016,7 +1106,8 @@
                 <key>storyboardName</key>
 				<string>FindRoute</string>
 				<key>descriptionText</key>
-				<string>The sample comes loaded with start and end stops. Tap on the Route button to solve for route between these stops. On completion the route is displayed on the map and the directions button is enabled. Tap on the button to see the list of directions</string>
+				<!-- <string>The sample comes loaded with start and end stops. Tap on the Route button to solve for route between these stops. On completion the route is displayed on the map and the directions button is enabled. Tap on the button to see the list of directions</string>-->
+                <string>スタート地点とゴール地点を指定してルートを検索します。方向ボタンをタップするとルート案内が表示されます。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1026,7 +1117,9 @@
                 <key>storyboardName</key>
 				<string>RouteAroundBarriers</string>
 				<key>descriptionText</key>
-				<string>Add stops and barriers to the map, set the route parameters and tap route. A route will be shown connecting the stops with a list of directions</string>
+				<!-- <string>Add stops and barriers to the map, set the route parameters and tap route. A route will be shown connecting the stops with a list of directions</string>-->
+                <string>経由地点とバリア（通行不可な範囲）を指定してルートを検索します。</string>
+
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1036,7 +1129,8 @@
                 <key>storyboardName</key>
 				<string>OfflineRouting</string>
 				<key>descriptionText</key>
-				<string>Tap on the map to add the first stop. Add additional stops to display the route. To route &apos;on the fly&apos; tap, hold and move to show the route dynamically.</string>
+				<!-- <string>Tap on the map to add the first stop. Add additional stops to display the route. To route &apos;on the fly&apos; tap, hold and move to show the route dynamically.</string>-->
+                <string>オフラインでルート検索を行います。マップ上をタップして、最短距離または最短時間のルートを検索します。</string>
 				<key>dependency</key>
 				<array>
 					<string>SanDiegoNetworkData</string>
@@ -1051,7 +1145,8 @@
                 <key>storyboardName</key>
 				<string>FindServiceAreaInteractive</string>
 				<key>descriptionText</key>
-				<string>This samples shows how to find service areas around a point</string>
+				<!-- <string>This samples shows how to find service areas around a point</string>-->
+                <string>タップした場所から設定した時間内で到達できる範囲を検索します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -1070,7 +1165,8 @@
                 <key>storyboardName</key>
 				<string>AnalyzeHotspots</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to execute a geoprocessing task to calculate a hotspot analysis based on the frequency of 911 calls.</string>
+				<!-- <string>This sample demonstrates how to execute a geoprocessing task to calculate a hotspot analysis based on the frequency of 911 calls.</string>-->
+                <string>ジオプロセシング サービスを使用してホット スポット分析を実行します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1080,7 +1176,8 @@
                 <key>storyboardName</key>
 				<string>AnalyzeViewshed</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to calculate a viewshed using a geoprocessing service.</string>
+				<!-- <string>This sample demonstrates how to calculate a viewshed using a geoprocessing service.</string>-->
+                <string>ジオプロセシング サービスを使用してを可視領域解析を実行します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1090,7 +1187,8 @@
                 <key>storyboardName</key>
 				<string>StatisticalQuery</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to query a feature table to get aggregated statistics back for a specific field.</string>
+				<!-- <string>This sample demonstrates how to query a feature table to get aggregated statistics back for a specific field.</string>-->
+                <string>フィーチャ テーブルをクエリし、特定のフィールドの統計情報を集計します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1100,7 +1198,8 @@
                 <key>storyboardName</key>
 				<string>StatisticalQueryGroupAndSort</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to query a feature table to get statistics for one or more specified fields. The results can be grouped and sorted using one or more fields in the table.</string>
+				<!-- <string>This sample demonstrates how to query a feature table to get statistics for one or more specified fields. The results can be grouped and sorted using one or more fields in the table.</string>-->
+                <string>フィーチャ テーブルをクエリして、指定した 1 つ以上のフィールドの統計情報を取得します。統計結果は、フィーチャ テーブルの 1 つまたは複数のフィールドを使用してグループ化およびソートできます。</string>
 			</dict>
             <dict>
                 <key>displayName</key>
@@ -1110,27 +1209,32 @@
                 <key>storyboardName</key>
                 <string>ViewshedCamera</string>
                 <key>descriptionText</key>
-                <string>Shows how to create a location viewshed from a camera.</string>
+                <!-- <string>Shows how to create a location viewshed from a camera.</string>-->
+                <string>現在のカメラからの可視領域を表示します。</string>
+
             </dict>
             <dict>
                 <key>displayName</key>
                 <string>Viewshed (location)</string>
                 <key>displayNameJp</key>
-                <string>可視領域 (場所)</string>
+                <string>可視領域 (位置)</string>
                 <key>storyboardName</key>
                 <string>ViewshedLocation</string>
                 <key>descriptionText</key>
-                <string>Demonstrates how to interactively edit a viewshed analysis in a scene and see updates on-the-fly.</string>
+                <!-- <string>Demonstrates how to interactively edit a viewshed analysis in a scene and see updates on-the-fly.</string>-->
+                <string>可視領域の表示設定を行い、指定した地点からの可視領域を表示します。</string>
+
             </dict>
 			<dict>
 				<key>displayName</key>
 				<string>Viewshed (GeoElement)</string>
                 <key>displayNameJp</key>
-                <string>可視領域 (フィーチャ)</string>
+                <string>可視領域 (ジオエレメント)</string>
                 <key>storyboardName</key>
 				<string>ViewshedGeoElement</string>
 				<key>descriptionText</key>
-				<string>Demonstrates how to construct a viewshed so that it updates automatically relative to a moving GeoElement.</string>
+				<!-- <string>Demonstrates how to construct a viewshed so that it updates automatically relative to a moving GeoElement.</string>-->
+                <string>移動するグラフィックから動的に可視領域を作成します。</string>
                 <key>dependency</key>
                 <array>
                     <string>Bradley3DModel</string>
@@ -1144,7 +1248,8 @@
                 <key>storyboardName</key>
                 <string>LineOfSightLocation</string>
                 <key>descriptionText</key>
-                <string>Place a line of sight between two locations.</string>
+                <!-- <string>Place a line of sight between two locations.</string>-->
+                <string>2 地点を指定し、2 地点間にの見通し解析を実行します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -1163,7 +1268,8 @@
                 <key>storyboardName</key>
 				<string>GroupUsers</string>
 				<key>descriptionText</key>
-				<string>The sample demonstrates how to show the users in a group</string>
+				<!-- <string>The sample demonstrates how to show the users in a group</string>-->
+                <string>ポータル内のグループに所属するユーザーを検索してリス表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1173,7 +1279,8 @@
                 <key>storyboardName</key>
 				<string>SearchForWebmapByKeyword</string>
 				<key>descriptionText</key>
-				<string>Shows how to search for webmaps within a portal using a keyword.</string>
+				<!-- <string>Shows how to search for webmaps within a portal using a keyword.</string>-->
+                <string>キーワードを使用してポータル内で共有される Web マップを検索します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -1192,7 +1299,8 @@
                 <key>storyboardName</key>
 				<string>DisplayScene</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to display a scene with elevation data</string>
+				<!-- <string>The sample shows you how to display a scene with elevation data</string>-->
+                <string>標高データを使用して地形を3Dで表現するシーンを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1202,7 +1310,8 @@
                 <key>storyboardName</key>
 				<string>ExtrudeGraphics</string>
 				<key>descriptionText</key>
-				<string>The sample shows you how to render graphics extruded in z direction</string>
+				<!-- <string>The sample shows you how to render graphics extruded in z direction</string>-->
+                <string>グラフィックのジオメトリを z 方向に立ち上げるレンダラを設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1212,17 +1321,19 @@
                 <key>storyboardName</key>
 				<string>SceneSymbols</string>
 				<key>descriptionText</key>
-				<string>The sample shows how to create symbols with different 3D shapes</string>
+				<!-- <string>The sample shows how to create symbols with different 3D shapes</string>-->
+                <string>異なる形状の 3D シンボルを作成します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>Surface placements</string>
                 <key>displayNameJp</key>
-                <string>サーフェス配置</string>
+                <string>サーフェスの配置</string>
                 <key>storyboardName</key>
 				<string>SurfacePlacements</string>
 				<key>descriptionText</key>
-				<string>The sample shows how to position graphics using different surface placements</string>
+				<!-- <string>The sample shows how to position graphics using different surface placements</string>-->
+                <string>基準とするサーフェスの配置プラパティを指定してグラフィックの表示位置（高さ）を設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1232,7 +1343,8 @@
                 <key>storyboardName</key>
 				<string>SceneLayerURL</string>
 				<key>descriptionText</key>
-				<string>The sample shows how to use a scene layer in a scene</string>
+				<!-- <string>The sample shows how to use a scene layer in a scene</string>-->
+                <string>URL を指定してシーン レイヤを作成、シーン上に表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1242,7 +1354,8 @@
                 <key>storyboardName</key>
 				<string>ScenePropertiesExpressions</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to update the orientation of graphics in graphics overlay using expressions on scene properties</string>
+				<!-- <string>This sample demonstrates how to update the orientation of graphics in graphics overlay using expressions on scene properties</string>-->
+                <string>シーン プロパティを設定してグラフィック オーバレイに追加されたグラフィックの向きを更新します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1252,7 +1365,8 @@
                 <key>storyboardName</key>
 				<string>Animate3DGraphic</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to animate a graphic’s position and rotation and have the camera follow it</string>
+				<!-- <string>This sample demonstrates how to animate a graphic’s position and rotation and have the camera follow it</string>-->
+                <string>グラフィックの位置と回転をアニメーション表示化し、カメラをグラフィックに追従させます。</string>
 				<key>dependency</key>
 				<array>
 					<string>MissionFiles</string>
@@ -1263,11 +1377,12 @@
 				<key>displayName</key>
 				<string>Distance composite symbol</string>
                 <key>displayNameJp</key>
-                <string>コンポジット シンボル</string>
+                <string>距離コンポジット シンボル</string>
                 <key>storyboardName</key>
 				<string>DistanceCompositeSymbol</string>
 				<key>descriptionText</key>
-				<string>Demonstrates how to create a graphic using a distance composite scene symbol. Distance composite scene symbols can render different symbols depending on the distance between the camera and the graphic.</string>
+				<!-- <string>Demonstrates how to create a graphic using a distance composite scene symbol. Distance composite scene symbols can render different symbols depending on the distance between the camera and the graphic.</string>-->
+                <string>距離コンポジット シーン シンボルを使用してグラフィックを作成します。 距離コンポジット シーン シンボルは、カメラとグラフィック間の距離に応じて、1つにグラフィックに異なるシンボルを設定することができます。</string>
 				<key>dependency</key>
 				<array>
 					<string>Bristol3DModel</string>
@@ -1281,7 +1396,8 @@
                 <key>storyboardName</key>
 				<string>TerrainExaggeration</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to use terrain exaggeration on a surface in a scene</string>
+				<!-- <string>This sample demonstrates how to use terrain exaggeration on a surface in a scene</string>-->
+                <string>シーンのサーフェスで表現される地形の標高を係数を設定して強調表現します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1291,7 +1407,8 @@
                 <key>storyboardName</key>
 				<string>FeatureLayerExtrusion</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to apply extrusion to a renderer on a feature layer</string>
+				<!-- <string>This sample demonstrates how to apply extrusion to a renderer on a feature layer</string>-->
+                <string>フィーチャ レイヤのレンダラを設定して、フィーチャのジオメトリを立ち上げて表示します。</string>
 			</dict>
 		</array>
 	</dict>
