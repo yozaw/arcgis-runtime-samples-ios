@@ -1,8 +1,12 @@
 arcgis-runtime-samples-ios [![](https://esri.box.com/shared/static/km0f6q9otadygg3mkszqd4mqn4k2yo6y.svg)](https://itunes.apple.com/us/app/arcgis-runtime-sdk-for-ios/id1180714771)
 ==========================
+<<<<<<< HEAD
 
 <!--
 This repository contains Swift sample code demonstrating the capabilities of [ArcGIS Runtime SDK for iOS](http://developers.arcgis.com/en/ios/). The project that can be opened in XCode and instantly run on a simulator or a device.
+=======
+This repository contains Swift sample code demonstrating the capabilities of [ArcGIS Runtime SDK for iOS](http://developers.arcgis.com/en/ios/). The project that can be opened in Xcode and instantly run on a simulator or a device.
+>>>>>>> Esri/master
 
 The ```master``` branch of this repository contains samples configured for the latest available version of [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/). For samples configured for older versions of the SDK,  look under the ```Releases``` tab for a specific version.
 -->
@@ -37,8 +41,13 @@ The ```master``` branch of this repository contains samples configured for the l
 * 3D - シーン、3D シンボル、シーン レイヤーの表示
 
 ## Requirements
+<<<<<<< HEAD
 * [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.2.1 (or higher).
 * XCode 9 (or higher)
+=======
+* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.2.1 (or higher). 
+* Xcode 9 (or higher)
+>>>>>>> Esri/master
 * iOS 11 SDK (or higher)
 
 1. Fork and then clone the repo. Don't know how? [Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
