@@ -37,7 +37,7 @@ The ```master``` branch of this repository contains samples configured for the l
 * 3D - シーン、3D シンボル、シーン レイヤーの表示
 
 ## Requirements
-* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.2.1 (or higher).
+* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.3.0 (or higher).
 * Xcode 9 (or higher)
 * iOS 11 SDK (or higher)
 

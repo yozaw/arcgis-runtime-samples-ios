@@ -541,6 +541,14 @@
 				<!-- <string>Open a WMS layer from a URL and display it in a map</string> -->
                 <string>URL を指定して WMS レイヤーを表示します。</string>
 			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Style WMS layers</string>
+				<key>storyboardName</key>
+				<string>StyleWebMapServiceLayer</string>
+				<key>descriptionText</key>
+				<string>Shows how to change the style of a WMS layer.</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -550,6 +558,14 @@
         <string>フィーチャ</string>
 		<key>children</key>
 		<array>
+			<dict>
+				<key>displayName</key>
+				<string>Feature layer rendering mode (map)</string>
+				<key>storyboardName</key>
+				<string>FeatureLayerRenderingModeMap</string>
+				<key>descriptionText</key>
+				<string>Control the rendering mode of feature layers.</string>
+			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>Feature layer (feature service)</string>
@@ -1089,6 +1105,22 @@
 				<!-- <string>This sample demonstrates how to convert a map location Point to a number of different coordinate notations. Tap on the map or edit the values in textfields</string>-->
                 <string>マップ上をタップするか、テキスト フィールドの値を編集して、特定の座標を異なる座標表記に変換します。</string>
 			</dict>
+      <dict>
+        <key>displayName</key>
+        <string>Geodesic operations</string>
+        <key>storyboardName</key>
+        <string>GeodesicOperations</string>
+        <key>descriptionText</key>
+        <string>Use geometry engine to calculate a geodesic path between two points and measure its distance. </string>
+      </dict>
+			<dict>
+				<key>displayName</key>
+				<string>Cut geometry</string>
+				<key>storyboardName</key>
+				<string>CutGeometry</string>
+				<key>descriptionText</key>
+				<string>This sample demonstrates how to cut a geometry with a polyline using the GeometryEngine. For example, you may want to subdivide a large parcel polygon into several smaller parcels.</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -1170,17 +1202,6 @@
 			</dict>
 			<dict>
 				<key>displayName</key>
-				<string>Analyze viewshed</string>
-                <key>displayNameJp</key>
-                <string>可視領域解析</string>
-                <key>storyboardName</key>
-				<string>AnalyzeViewshed</string>
-				<key>descriptionText</key>
-				<!-- <string>This sample demonstrates how to calculate a viewshed using a geoprocessing service.</string>-->
-                <string>ジオプロセシング サービスを使用してを可視領域解析を実行します。</string>
-			</dict>
-			<dict>
-				<key>displayName</key>
 				<string>Statistical query</string>
                 <key>displayNameJp</key>
                 <string>統計クエリ</string>
@@ -1201,30 +1222,39 @@
 				<!-- <string>This sample demonstrates how to query a feature table to get statistics for one or more specified fields. The results can be grouped and sorted using one or more fields in the table.</string>-->
                 <string>フィーチャ テーブルをクエリして、指定した 1 つ以上のフィールドの統計情報を取得します。統計結果は、フィーチャ テーブルの 1 つまたは複数のフィールドを使用してグループ化およびソートできます。</string>
 			</dict>
-            <dict>
-                <key>displayName</key>
-                <string>Viewshed (camera)</string>
-                <key>displayNameJp</key>
-                <string>可視領域 (カメラ)</string>
-                <key>storyboardName</key>
-                <string>ViewshedCamera</string>
-                <key>descriptionText</key>
-                <!-- <string>Shows how to create a location viewshed from a camera.</string>-->
-                <string>現在のカメラからの可視領域を表示します。</string>
-
-            </dict>
-            <dict>
-                <key>displayName</key>
-                <string>Viewshed (location)</string>
-                <key>displayNameJp</key>
-                <string>可視領域 (位置)</string>
-                <key>storyboardName</key>
-                <string>ViewshedLocation</string>
-                <key>descriptionText</key>
-                <!-- <string>Demonstrates how to interactively edit a viewshed analysis in a scene and see updates on-the-fly.</string>-->
-                <string>可視領域の表示設定を行い、指定した地点からの可視領域を表示します。</string>
-
-            </dict>
+			<dict>
+				<key>displayName</key>
+				<string>Viewshed (geoprocessing)</string>
+				<key>displayNameJp</key>
+				<string>可視領域解析 (ジオプロセシング)</string>
+				<key>storyboardName</key>
+				<string>ViewshedGeoprocessing</string>
+				<key>descriptionText</key>
+				<!--<string>This sample demonstrates how to calculate a viewshed using a geoprocessing service.</string>-->
+				<string>ジオプロセシング サービスを使用してを可視領域解析を実行します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Viewshed (camera)</string>
+				<key>displayNameJp</key>
+				<string>可視領域 (カメラ)</string>
+				<key>storyboardName</key>
+				<string>ViewshedCamera</string>
+				<key>descriptionText</key>
+				<!--<string>Shows how to create a location viewshed from a camera.</string>-->
+				<string>現在のカメラからの可視領域を表示します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Viewshed (location)</string>
+				<key>displayNameJp</key>
+				<string>可視領域 (位置)</string>
+				<key>storyboardName</key>
+				<string>ViewshedLocation</string>
+				<key>descriptionText</key>
+				<!--<string>Demonstrates how to interactively edit a viewshed analysis in a scene and see updates on-the-fly.</string>-->
+				<string>可視領域の表示設定を行い、指定した地点からの可視領域を表示します。</string>
+			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>Viewshed (GeoElement)</string>
@@ -1233,23 +1263,43 @@
                 <key>storyboardName</key>
 				<string>ViewshedGeoElement</string>
 				<key>descriptionText</key>
-				<!-- <string>Demonstrates how to construct a viewshed so that it updates automatically relative to a moving GeoElement.</string>-->
-                <string>移動するグラフィックから動的に可視領域を作成します。</string>
-                <key>dependency</key>
-                <array>
-                    <string>Bradley3DModel</string>
-                </array>
-            </dict>
-            <dict>
-                <key>displayName</key>
-                <string>Line of sight (location)</string>
-                <key>displayNameJp</key>
-                <string>見通し解析 (場所)</string>
-                <key>storyboardName</key>
-                <string>LineOfSightLocation</string>
-                <key>descriptionText</key>
-                <!-- <string>Place a line of sight between two locations.</string>-->
-                <string>2 地点を指定し、2 地点間にの見通し解析を実行します。</string>
+				<!--<string>Demonstrates how to construct a viewshed so that it updates automatically relative to a moving GeoElement.</string>-->
+				<string>移動するグラフィックから動的に可視領域を作成します。</string>
+				<key>dependency</key>
+				<array>
+					<string>Bradley3DModel</string>
+				</array>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Line of sight (location)</string>
+				<key>displayNameJp</key>
+				<string>見通し解析 (場所)</string>
+				<key>storyboardName</key>
+				<string>LineOfSightLocation</string>
+				<key>descriptionText</key>
+				<!--<string>Place a line of sight between two locations.</string>-->
+				<string>2 地点を指定し、2 地点間にの見通し解析を実行します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Line of sight (geoelement)</string>
+				<key>storyboardName</key>
+				<string>LineOfSightGeoElement</string>
+				<key>descriptionText</key>
+				<string>Line of sight between an observer and a moving GeoElement</string>
+				<key>dependency</key>
+				<array>
+					<string>Dolmus3DModel</string>
+				</array>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Distance measurement analysis</string>
+				<key>storyboardName</key>
+				<string>DistanceMeasurementAnalysis</string>
+				<key>descriptionText</key>
+				<string>Demonstrates measuring 3D distances between two points in a scene.</string>
 			</dict>
 		</array>
 	</dict>
@@ -1291,6 +1341,14 @@
         <string>3D</string>
 		<key>children</key>
 		<array>
+			<dict>
+				<key>descriptionText</key>
+				<string>This sample shows you how to open a web scene from a portal item.</string>
+				<key>storyboardName</key>
+				<string>OpenScene</string>
+				<key>displayName</key>
+				<string>Open a scene (portal item)</string>
+			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>Display a scene</string>
