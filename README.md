@@ -36,10 +36,17 @@ The ```master``` branch of this repository contains samples configured for the l
 * ルート解析 - バリアを指定したルート検索、ルート案内 turn-by-turn directions
 * 3D - シーン、3D シンボル、シーン レイヤーの表示
 
+<!--
 ## Requirements
 * [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.3.0 (or higher).
 * Xcode 9 (or higher)
 * iOS 11 SDK (or higher)
+-->
+
+## 動作環境
+* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.3.0 (以降).
+* Xcode 9 (以降)
+* iOS 11 SDK (以降)
 
 1. Fork and then clone the repo. Don't know how? [Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 2. Build and run the project to create a single app containing all of the samples.

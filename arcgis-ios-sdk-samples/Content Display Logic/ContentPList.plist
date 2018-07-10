@@ -544,10 +544,14 @@
 			<dict>
 				<key>displayName</key>
 				<string>Style WMS layers</string>
+                <key>displayNameJp</key>
+                <string>WMS レイヤーのスタイル設定</string>
 				<key>storyboardName</key>
 				<string>StyleWebMapServiceLayer</string>
 				<key>descriptionText</key>
-				<string>Shows how to change the style of a WMS layer.</string>
+				<!-- <string>Shows how to change the style of a WMS layer.</string> -->
+                <string>WMS レイヤーのスタイルを変更します。</string>
+
 			</dict>
 		</array>
 	</dict>
@@ -561,10 +565,13 @@
 			<dict>
 				<key>displayName</key>
 				<string>Feature layer rendering mode (map)</string>
+                <key>displayNameJp</key>
+                <string>フィーチャ レイヤーの描画モード</string>
 				<key>storyboardName</key>
 				<string>FeatureLayerRenderingModeMap</string>
 				<key>descriptionText</key>
-				<string>Control the rendering mode of feature layers.</string>
+				<!-- <string>Control the rendering mode of feature layers.</string> -->
+                <string>フィーチャ レイヤーの描画モードを設定します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1108,18 +1115,25 @@
       <dict>
         <key>displayName</key>
         <string>Geodesic operations</string>
+        <key>displayNameJp</key>
+        <string>測地線</string>
         <key>storyboardName</key>
         <string>GeodesicOperations</string>
         <key>descriptionText</key>
-        <string>Use geometry engine to calculate a geodesic path between two points and measure its distance. </string>
+        <!-- <string>Use geometry engine to calculate a geodesic path between two points and measure its distance. </string>-->
+        <string>2地点間の測地線とその距離を表示します。</string>
       </dict>
 			<dict>
 				<key>displayName</key>
 				<string>Cut geometry</string>
+                <key>displayNameJp</key>
+                <string>ジオメトリの分割</string>
 				<key>storyboardName</key>
 				<string>CutGeometry</string>
 				<key>descriptionText</key>
-				<string>This sample demonstrates how to cut a geometry with a polyline using the GeometryEngine. For example, you may want to subdivide a large parcel polygon into several smaller parcels.</string>
+				<!-- <string>This sample demonstrates how to cut a geometry with a polyline using the GeometryEngine. For example, you may want to subdivide a large parcel polygon into several smaller parcels.</string>-->
+                <string>GeometryEngine を使用して、ポリゴンをポリラインで分割します。</string>
+
 			</dict>
 		</array>
 	</dict>
@@ -1279,15 +1293,19 @@
 				<string>LineOfSightLocation</string>
 				<key>descriptionText</key>
 				<!--<string>Place a line of sight between two locations.</string>-->
-				<string>2 地点を指定し、2 地点間にの見通し解析を実行します。</string>
+				<string>2 地点を指定し、2 地点間の見通し解析を実行します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
 				<string>Line of sight (geoelement)</string>
+                <key>displayNameJp</key>
+                <string>見通し解析 (ジオエレメント)</string>
 				<key>storyboardName</key>
 				<string>LineOfSightGeoElement</string>
 				<key>descriptionText</key>
-				<string>Line of sight between an observer and a moving GeoElement</string>
+				<!--<string>Line of sight between an observer and a moving GeoElement</string>-->
+                <string>固定地点と移動するジオエレメント間の見通し解析を実行します。</string>
+
 				<key>dependency</key>
 				<array>
 					<string>Dolmus3DModel</string>
@@ -1296,10 +1314,13 @@
 			<dict>
 				<key>displayName</key>
 				<string>Distance measurement analysis</string>
+                <key>displayNameJp</key>
+                <string>計測</string>
 				<key>storyboardName</key>
 				<string>DistanceMeasurementAnalysis</string>
 				<key>descriptionText</key>
-				<string>Demonstrates measuring 3D distances between two points in a scene.</string>
+				<!--<string>Demonstrates measuring 3D distances between two points in a scene.</string>-->
+                <string>2地点間の 3D（水平/鉛直/直線）距離を計測します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -1343,11 +1364,14 @@
 		<array>
 			<dict>
 				<key>descriptionText</key>
-				<string>This sample shows you how to open a web scene from a portal item.</string>
+				<!-- <string>This sample shows you how to open a web scene from a portal item.</string>-->
+                <string>ポータルに共有されている Web シーンを表示します。</string>
 				<key>storyboardName</key>
 				<string>OpenScene</string>
 				<key>displayName</key>
 				<string>Open a scene (portal item)</string>
+                <key>displayNameJp</key>
+                <string>シーンの表示（Web シーン）</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1358,7 +1382,7 @@
 				<string>DisplayScene</string>
 				<key>descriptionText</key>
 				<!-- <string>The sample shows you how to display a scene with elevation data</string>-->
-                <string>標高データを使用して地形を3Dで表現するシーンを表示します。</string>
+                <string>標高データを使用して地形を 3D で表現するシーンを表示します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
