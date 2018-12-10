@@ -16,10 +16,9 @@
 import UIKit
 import ArcGIS
 
-class DisplayGridViewController: UIViewController, UIAdaptivePresentationControllerDelegate {
-
+class DisplayGridViewController: UIViewController {
+    
     @IBOutlet weak var mapView: AGSMapView!
-    private var gridSettingsViewController:DisplayGridSettingsViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,7 @@ class DisplayGridViewController: UIViewController, UIAdaptivePresentationControl
         (navigationItem.rightBarButtonItem as! SourceCodeBarButtonItem).filenames = ["DisplayGridViewController", "DisplayGridSettingsViewController"]
 
         // Initialize map with imagery basemap
-        let map = AGSMap(basemap: AGSBasemap.imagery())
+        let map = AGSMap(basemap: .imagery())
         
         // Set initial viewpoint
         let center = AGSPoint(x: -7702852.905619, y: 6217972.345771, spatialReference: AGSSpatialReference(wkid: 3857))
@@ -41,34 +40,51 @@ class DisplayGridViewController: UIViewController, UIAdaptivePresentationControl
         mapView.grid = AGSLatitudeLongitudeGrid()
     }
     
-    //MARK: - UIAdaptivePresentationControllerDelegate
+    private var popoverViewController: UIViewController?
+    
+    private func makeSettingsPopoverViewController() -> UIViewController {
+        guard let navController = storyboard?.instantiateViewController(withIdentifier: "SettingsNavigationController") as? UINavigationController,
+            let viewController = navController.topViewController as? DisplayGridSettingsViewController else {
+            fatalError()
+        }
+        
+        viewController.mapView = mapView
+        navController.modalPresentationStyle = .popover
+        
+        return navController
+    }
+    
+    @IBAction func showSettings(_ sender: Any) {
+        let settingsViewController: UIViewController
+        if let viewController = popoverViewController {
+            settingsViewController = viewController
+        } else {
+            settingsViewController = makeSettingsPopoverViewController()
+            self.popoverViewController = settingsViewController
+        }
+        settingsViewController.preferredContentSize = {
+            let height: CGFloat
+            if traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular {
+                height = 350
+            } else {
+                height = 250
+            }
+            return CGSize(width: 375, height: height)
+        }()
+        settingsViewController.presentationController?.delegate = self
+        if let popoverPC = settingsViewController.popoverPresentationController {
+            popoverPC.barButtonItem = sender as? UIBarButtonItem
+            popoverPC.passthroughViews = [mapView]
+        }
+        present(settingsViewController, animated: true)
+    }
+    
+}
+
+extension DisplayGridViewController: UIAdaptivePresentationControllerDelegate {
     
     func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
-        //
-        // For popover or non modal presentation
-        return UIModalPresentationStyle.none
+        return .none
     }
     
-    //MARK: - Navigation
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "DisplayGridSettingsSegue" {
-            //
-            // Set grid settings view controller
-            gridSettingsViewController = segue.destination as! DisplayGridSettingsViewController
-            gridSettingsViewController.mapView = self.mapView
-
-            // Pop over settings
-            gridSettingsViewController.presentationController?.delegate = self
-            gridSettingsViewController.popoverPresentationController?.passthroughViews = [self.mapView]
-            
-            // Preferred content size
-            if traitCollection.horizontalSizeClass == .regular && traitCollection.verticalSizeClass == .regular {
-                gridSettingsViewController.preferredContentSize = CGSize(width: 375, height: 350)
-            }
-            else {
-                gridSettingsViewController.preferredContentSize = CGSize(width: 375, height: 250)
-            }
-        }
-    }
 }

@@ -19,7 +19,6 @@
 				<key>descriptionText</key>
 				<!--  <string>This sample shows you how to display a map with imagery basemap</string> -->
                 <string>ArcGIS Online の衛星画像のベースマップを表示します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -31,7 +30,6 @@
 				<key>descriptionText</key>
 				<!--  <string>This sample shows you how to customize map view&apos;s background grid</string> -->
                 <string>マップの背景のグリッドをカスタマイズします。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -50,7 +48,7 @@
                 <key>displayNameJp</key>
                 <string>Web マップの表示</string>
                 <key>storyboardName</key>
-				<string>OpenExistingMap</string>
+				<string>OpenMapURL</string>
 				<key>descriptionText</key>
 				<!-- <string>This sample shows you how to open an existing map using its url</string> -->
                 <string>URL を指定して ArcGIS Online 上にある Web マップを開きます。</string>
@@ -65,7 +63,6 @@
 				<key>descriptionText</key>
 				<!-- <string>Changing the basemap is too easy. This sample shows you how it can be done</string> -->
                 <string>ベースマップを変更方法を示します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -88,7 +85,6 @@
 				<key>descriptionText</key>
 				<!-- <string>You can set the initial location for a map by passing in the coordinates and the zoom level</string> -->
                 <string>中心座標とズーム レベルを指定してマップの初期表示位置を設定します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -264,6 +260,17 @@
 				<key>descriptionText</key>
 				<!-- <string>This sample demonstrates how to generate an offline map for web map in ArcGIS Portal. The sample requires login to take AGOL Basemap offline.</string> -->
                 <string>Web マップからオフライン用のマップを作成します。ArcGIS Online のベースマップをダウンロードするために、ArcGIS Online へのログインが必要です。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Generate offline map (overrides)</string>
+				<key>displayNameJp</key>
+				<string>オフライン マップの作成（オーバーライド）</string>
+				<key>storyboardName</key>
+				<string>GenerateOfflineMapOverrides</string>
+				<key>descriptionText</key>
+				<!-- <string>Override the default parameters when taking a map from ArcGIS Portal offline.</string> -->
+				<string>ポータルからマップをダウンロードするときに、デフォルトのパラメータをオーバーライドします。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -553,6 +560,87 @@
                 <string>WMS レイヤーのスタイルを変更します。</string>
 
 			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Query a map image sublayer</string>
+				<key>displayNameJp</key>
+				<string>マップ イメージ サブレイヤーのクエリ</string>
+				<key>storyboardName</key>
+				<string>QueryMapImageSublayer</string>
+				<key>descriptionText</key>
+				<!-- <<string>This sample demonstrates how to execute an attribute and spatial query on the sublayers of an ArcGIS map image layer.</string> -->
+				<<string>ArcGIS マップ イメージ レイヤーのサブレイヤで属性と空間クエリを実行します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Symbolize shapefile</string>
+				<key>displayNameJp</key>
+				<string>シェープファイルのシンボル</string>
+				<key>storyboardName</key>
+				<string>SymbolizeShapefile</string>
+				<key>descriptionText</key>
+				<!--<string>Symbolize a feature layer on a map using a shapefile</string> -->
+				<string>シェイプファイルからフィーチャ レイヤのシンボルを設定する</string>
+				<key>dependency</key>
+				<array>
+					<string>SubdivisionsShapefile</string>
+				</array>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Display KML</string>
+				<key>displayNameJp</key>
+				<string>KML の表示</string>
+				<key>storyboardName</key>
+				<string>DisplayKML</string>
+				<key>descriptionText</key>
+				<!--<string>Show a KML file from a URL, local file, or portal item.</string>-->
+				<string>URL、ローカル ファイル、またはポータル アイテム上の KML ファイルを表示します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>List KML contents</string>
+				<key>displayNameJp</key>
+				<string>KML コンテンツのリスト表示</string>
+				<key>storyboardName</key>
+				<string>ListKMLContents</string>
+				<key>descriptionText</key>
+				<!--<string>List the contents of a KML file.</string>-->
+				<string>KML ファイルのコンテンツを一覧表示します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Identify KML features</string>
+				<key>displayNameJp</key>
+				<string>KML フィーチャの属性表示</string>
+				<key>storyboardName</key>
+				<string>IdentifyKMLFeatures</string>
+				<key>descriptionText</key>
+				<!--<string>Show a balloon popup with formatted content for tapped KML features. KML supports defining HTML for popups.</string>-->
+				<string>タップされた KML フィーチャのバルーン ポップアップを表示します。KML はポップアップ用の HTML 定義をサポートしています。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Display KML network links</string>
+				<key>displayNameJp</key>
+				<string>KML ネットワークリンクの表示</string>
+				<key>storyboardName</key>
+				<string>DisplayKMLNetworkLinks</string>
+				<key>descriptionText</key>
+				<!--<string>Display a KML file that loads content from a network resource.</string>-->
+				<string>ネットワーク リソースからコンテンツを読み込む KML ファイルを表示します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>OpenStreetMap layer</string>
+				<key>displayNameJp</key>
+				<string>OpenStreetMap レイヤー</string>
+				<key>storyboardName</key>
+				<string>OpenStreetMapLayer</string>
+				<key>descriptionText</key>
+				<!--<string>Display a map with an OpenStreetMap basemap.</string>-->
+				<string>OpenStreetMap のベースマップを表示します。</string>
+			</dict>
 		</array>
 	</dict>
 	<dict>
@@ -623,10 +711,10 @@
 				<string>FeatureLayerShapefile</string>
 				<key>descriptionText</key>
 				<!-- <string>Show a feature layer on a map using a shapefile</string> -->
-                <string>Shapefile を使用してフィーチャ レイヤーを表示します。</string>
+                <string>シェープファイルを使用してフィーチャ レイヤーを表示します。</string>
 				<key>dependency</key>
 				<array>
-					<string>SubdivisionsShapefile</string>
+					<string>PublicArtShapefile</string>
 				</array>
 			</dict>
 			<dict>
@@ -1026,8 +1114,8 @@
                 <key>storyboardName</key>
 				<string>EditGeometry</string>
 				<key>descriptionText</key>
-				<!-- <string>Tap on a feature to display a callout. To change the geomemtry of the selected feature tap on the info button. Tap on the new location on the map and tap Done to save</string>-->
-                <string>フィーチャをタップして選択し、マップ上で新しい場所をタップしてフィーチャの位置（ジオメトリ）を更新します。</string>
+				<!-- <string>Tap on a feature to display a callout. To change the geometry of the selected feature tap on the info button. Tap on the new location on the map and tap Done to save</string>-->
+                <string>フィーチャをタップして選択し、マップ上で新しい場所をタップしてフィーチャの位置（ジオメトリ）を更新します。新しい位置をマップ上でタップして、完了ボタンをタップして保存します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1112,7 +1200,18 @@
 				<!-- <string>This sample demonstrates how to convert a map location Point to a number of different coordinate notations. Tap on the map or edit the values in textfields</string>-->
                 <string>マップ上をタップするか、テキスト フィールドの値を編集して、特定の座標を異なる座標表記に変換します。</string>
 			</dict>
-      <dict>
+			<dict>
+				<key>displayName</key>
+				<string>List transformations</string>
+				<key>displayNameJp</key>
+				<string>座標変換</string>
+				<key>storyboardName</key>
+				<string>ListTransformations</string>
+				<key>descriptionText</key>
+				<!-- <string>This sample demonstrates how to use the transformation catalog to get a list of available datum transformations that can be used to project a geometry between two different spatial references, and how to use one of the transformations to perform the geometry engine&apos;s &quot;project&quot; operation.</string>-->
+				<string>変換カタログを使用して 2 つの異なる空間参照間でジオメトリを投影するために使用できる使用可能な変換リストを取得し、ジオメトリ エンジンを使用して投影変換を行います。</string>
+			</dict>
+			<dict>
         <key>displayName</key>
         <string>Geodesic operations</string>
         <key>displayNameJp</key>
@@ -1133,7 +1232,17 @@
 				<key>descriptionText</key>
 				<!-- <string>This sample demonstrates how to cut a geometry with a polyline using the GeometryEngine. For example, you may want to subdivide a large parcel polygon into several smaller parcels.</string>-->
                 <string>GeometryEngine を使用して、ポリゴンをポリラインで分割します。</string>
-
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Spatial relationships</string>
+				<key>displayNameJp</key>
+				<string>空間関係</string>
+				<key>storyboardName</key>
+				<string>SpatialRelationships</string>
+				<key>descriptionText</key>
+				<!-- <string>This sample demonstrates how to use the AGSGeometryEngine to evaluate the spatial relationships between geometries.</string> -->
+				<string>ジオメトリ エンジンを使用してジオメトリ間の空間関係を評価します。</string>
 			</dict>
 		</array>
 	</dict>
@@ -1491,6 +1600,17 @@
 				<key>descriptionText</key>
 				<!-- <string>This sample demonstrates how to apply extrusion to a renderer on a feature layer</string>-->
                 <string>フィーチャ レイヤのレンダラを設定して、フィーチャのジオメトリを立ち上げて表示します。</string>
+			</dict>
+			<dict>
+				<key>displayName</key>
+				<string>Scene layer selection</string>
+				<key>displayNameJp</key>
+				<string>シーン レイヤーの選択</string>
+				<key>storyboardName</key>
+				<string>SceneLayerSelection</string>
+				<key>descriptionText</key>
+				<!-- <string>This sample demonstrates how to identify geoelements in a scene layer.</string>-->
+				<string>シーン レイヤでジオエレメントを識別します。</string>
 			</dict>
 		</array>
 	</dict>

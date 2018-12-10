@@ -1,4 +1,4 @@
-arcgis-runtime-samples-ios [![](https://esri.box.com/shared/static/km0f6q9otadygg3mkszqd4mqn4k2yo6y.svg)](https://itunes.apple.com/us/app/arcgis-runtime-sdk-for-ios/id1180714771)
+ArcGIS Runtime SDK for iOS Samples [![](https://esri.box.com/shared/static/km0f6q9otadygg3mkszqd4mqn4k2yo6y.svg)](https://itunes.apple.com/us/app/arcgis-runtime-sdk-for-ios/id1180714771)
 ==========================
 
 <!--
@@ -14,6 +14,7 @@ The ```master``` branch of this repository contains samples configured for the l
 
 <!--
 ## Features
+
 * Maps - Open, create, inteact with and save maps
 * Layers - Layer types offered by the SDK
 * Features - Working with Feature layers
@@ -38,15 +39,15 @@ The ```master``` branch of this repository contains samples configured for the l
 
 <!--
 ## Requirements
-* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.3.0 (or higher).
-* Xcode 9 (or higher)
-* iOS 11 SDK (or higher)
+* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/ios/) 100.4.0 (or higher).
+* Xcode 10.0 (or higher)
+* iOS 12 SDK (or higher)
 -->
 
 ## 動作環境
-* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.3.0 (以降).
-* Xcode 9 (以降)
-* iOS 11 SDK (以降)
+* [ArcGIS Runtime SDK for iOS](https://developers.arcgis.com/en/ios/) 100.4.0 (以降).
+* Xcode 10.0 (以降)
+* iOS 12 SDK (以降)
 
 1. Fork and then clone the repo. Don't know how? [Get started here.](http://htmlpreview.github.com/?https://github.com/Esri/esri.github.com/blob/master/help/esri-getting-to-know-github.html)
 2. Build and run the project to create a single app containing all of the samples.
@@ -66,6 +67,7 @@ Find a bug or want to request a new feature?  Please let us know by submitting a
 Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/esri/contributing).
 
 ## Licensing
+
 Copyright 2013 Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
