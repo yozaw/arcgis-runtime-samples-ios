@@ -14,18 +14,21 @@
 
 struct Category: Equatable {
     var name: String
+    var nameJp: String
     var samples: [Sample]
 }
 
 extension Category: Decodable {
     enum CodingKeys: String, CodingKey {
         case name = "displayName"
+        case nameJp = "displayNameJp"
         case samples = "children"
     }
 
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(String.self, forKey: .name)
+        nameJp = try values.decode(String.self, forKey: .nameJp)
         samples = try values.decode([Sample].self, forKey: .samples)
     }
 }

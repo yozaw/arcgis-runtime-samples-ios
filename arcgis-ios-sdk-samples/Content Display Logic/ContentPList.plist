@@ -129,7 +129,6 @@
 				<key>descriptionText</key>
 				<!-- <string>Every time the map is drawing you get an update using the callbacks</string> -->
                 <string>マップ操作によるマップの描画状態の更新を監視します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -421,7 +420,6 @@
 				<key>descriptionText</key>
 				<!-- <string>This sample demonstrates how to create an image service raster and apply a Hillshade raster function to it.</string>-->
                 <string>イメージ サービスで公開されるラスタを使用して、陰影起伏ラスタ関数を実行します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -433,7 +431,6 @@
 				<key>descriptionText</key>
 				<!-- <string>You can create a raster layer from a file</string>-->
                 <string>画像ファイルからラスター レイヤーを作成します。</string>
-
 				<key>dependency</key>
 				<array>
 					<string>ShastaRaster</string>
@@ -558,7 +555,6 @@
 				<key>descriptionText</key>
 				<!-- <string>Shows how to change the style of a WMS layer.</string> -->
                 <string>WMS レイヤーのスタイルを変更します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -568,8 +564,8 @@
 				<key>storyboardName</key>
 				<string>QueryMapImageSublayer</string>
 				<key>descriptionText</key>
-				<!-- <<string>This sample demonstrates how to execute an attribute and spatial query on the sublayers of an ArcGIS map image layer.</string> -->
-				<<string>ArcGIS マップ イメージ レイヤーのサブレイヤで属性と空間クエリを実行します。</string>
+				<!-- <string>This sample demonstrates how to execute an attribute and spatial query on the sublayers of an ArcGIS map image layer.</string> -->
+				<string>ArcGIS マップ イメージ レイヤーのサブレイヤで属性と空間クエリを実行します。</string>
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1046,7 +1042,6 @@
 				<key>descriptionText</key>
 				<!-- <string>Search for a point of interest either nearby, near a particular location or across the world</string>-->
                 <string>現在位置または特定の住所を指定して POI を検索します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1212,16 +1207,16 @@
 				<string>変換カタログを使用して 2 つの異なる空間参照間でジオメトリを投影するために使用できる使用可能な変換リストを取得し、ジオメトリ エンジンを使用して投影変換を行います。</string>
 			</dict>
 			<dict>
-        <key>displayName</key>
-        <string>Geodesic operations</string>
-        <key>displayNameJp</key>
-        <string>測地線</string>
-        <key>storyboardName</key>
-        <string>GeodesicOperations</string>
-        <key>descriptionText</key>
-        <!-- <string>Use geometry engine to calculate a geodesic path between two points and measure its distance. </string>-->
-        <string>2地点間の測地線とその距離を表示します。</string>
-      </dict>
+                <key>displayName</key>
+                <string>Geodesic operations</string>
+                <key>displayNameJp</key>
+                <string>測地線</string>
+                <key>storyboardName</key>
+                <string>GeodesicOperations</string>
+                <key>descriptionText</key>
+                <!-- <string>Use geometry engine to calculate a geodesic path between two points and measure its distance. </string>-->
+                <string>2地点間の測地線とその距離を表示します。</string>
+            </dict>
 			<dict>
 				<key>displayName</key>
 				<string>Cut geometry</string>
@@ -1274,7 +1269,6 @@
 				<key>descriptionText</key>
 				<!-- <string>Add stops and barriers to the map, set the route parameters and tap route. A route will be shown connecting the stops with a list of directions</string>-->
                 <string>経由地点とバリア（通行不可な範囲）を指定してルートを検索します。</string>
-
 			</dict>
 			<dict>
 				<key>displayName</key>
@@ -1414,7 +1408,6 @@
 				<key>descriptionText</key>
 				<!--<string>Line of sight between an observer and a moving GeoElement</string>-->
                 <string>固定地点と移動するジオエレメント間の見通し解析を実行します。</string>
-
 				<key>dependency</key>
 				<array>
 					<string>Dolmus3DModel</string>

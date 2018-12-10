@@ -47,10 +47,6 @@ class ContentCollectionViewController: UICollectionViewController, UICollectionV
             // reset the change made in viewWillDisappear
             definesPresentationContext = true
         }
-        if let displayNameJp = dict["displayNameJp"] as? String {
-            node.displayNameJp = displayNameJp
-        }
-        return node
     }
 
     private func addSearchController(){
@@ -115,10 +111,9 @@ class ContentCollectionViewController: UICollectionViewController, UICollectionV
         cell.layer.masksToBounds = false
 
         //name
-        //cell.nameLabel.text = node.displayName.uppercased()
-        cell.nameLabel.text = node.displayNameJp.uppercased()
-
-
+        //cell.nameLabel.text = category.name.uppercased()
+        cell.nameLabel.text = category.nameJp.uppercased()
+        
         //icon
         let image = UIImage(named: "\(category.name)_icon")
         cell.iconImageView.image = image

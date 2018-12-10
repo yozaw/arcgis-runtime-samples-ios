@@ -64,7 +64,8 @@ class ContentTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as! ContentTableCell
 
         let sample = displayedSamples[indexPath.row]
-        cell.titleLabel.text = sample.name
+        //cell.titleLabel.text = sample.name
+        cell.titleLabel.text = sample.nameJp
 
         if self.expandedRowIndex == indexPath.row {
             cell.detailLabel.text = sample.description

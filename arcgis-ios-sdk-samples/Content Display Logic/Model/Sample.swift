@@ -19,6 +19,7 @@ import Foundation
 struct Sample: Hashable {
     
     var name: String
+    var nameJp: String
     var description: String
     var storyboardName: String
     var dependencies: [String]
@@ -28,6 +29,7 @@ struct Sample: Hashable {
 extension Sample: Decodable {
     enum CodingKeys: String, CodingKey {
         case name = "displayName"
+        case nameJp = "displayNameJp"
         case description = "descriptionText"
         case storyboardName = "storyboardName"
         case dependencies = "dependency"
@@ -36,6 +38,7 @@ extension Sample: Decodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(String.self, forKey: .name)
+        nameJp = try values.decode(String.self, forKey: .nameJp)
         description = try values.decode(String.self, forKey: .description)
         storyboardName = try values.decode(String.self, forKey: .storyboardName)
         dependencies = try values.decodeIfPresent([String].self, forKey: .dependencies) ?? []
