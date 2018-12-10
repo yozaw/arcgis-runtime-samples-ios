@@ -8,7 +8,7 @@
 ![](image2.png)
 
 <!--## How it works-->
-## サンプルの使用方法
+## コードの実装方法
 
 <!--`AGSMapView` provides different methods you can use to set the viewpoint. The app uses the `setViewpointGeometry(_:padding:completion:)` method to zoom to the Griffith Park geometry, `setViewpointCenter(_:scale:completion:)` method to zoom to London and `setViewpoint(_:duration:curve:completion:)` method for animation. Apart from these, there are some other methods (mentioned below) you can use.
 

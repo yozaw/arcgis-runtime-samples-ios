@@ -22,7 +22,7 @@ This sample demonstrates how to change basemap of a map.
 <!--
 ## How it works
 -->
-## 使い方
+## コードの実装方法
 
 <!--
 `AGSMap` has a `basemap` property of type `AGSBasemap`. On each selection, the app creates a new basemap of the specified type and assigns it to `map.basemap`. `AGSBasemap` provides a set of factory methods for each of Esri's basemap.

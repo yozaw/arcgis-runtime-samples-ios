@@ -28,7 +28,7 @@ Tap on the `Change background` button in the toolbar to open the settings view. 
 
 ![](image1.png)
 
-## 使い方
+## コードの実装方法
 
 `AGSMapView` は　`backgroundGrid` タイプの `backgroundGrid` プロパティを持っています。`AGSBackgroundGrid` では、以下のプロパティを使用して、マップビューの背景をカスタマイズできます。
 - `color` : 塗り潰し色

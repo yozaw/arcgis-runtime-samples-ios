@@ -13,7 +13,7 @@ ArcGIS Online の衛星画像のベースマップを表示します。
 <!--
 ## How it works
 -->
-## 使い方
+## コードの実装方法
 
 <!--
 `AGSMap` provides an initializer `init(basemap:)` to instantiate a map to use the given basemap. Then you just need to assign that map to the `AGSMapView` object.
